@@ -461,7 +461,7 @@ footer{ background:var(--sand); padding:80px 0 32px; }
 .footer-bottom{ display:flex; flex-direction:column; gap:12px; text-align:center; }
 @media(min-width:768px){ .footer-bottom{ flex-direction:row; justify-content:space-between; text-align:start; } }
 
-/* ---------- floating WhatsApp + persistent CTA pill ---------- */
+/* ---------- floating WhatsApp ---------- */
 .floating-wa{
   position:fixed; bottom:24px; inset-inline-end:24px; z-index:80;
   width:58px; height:58px; border-radius:50%; background:#25D366;
@@ -472,23 +472,6 @@ footer{ background:var(--sand); padding:80px 0 32px; }
 .floating-wa svg{ width:28px; height:28px; fill:#fff; }
 .floating-wa{ opacity:0; visibility:hidden; transition:opacity 300ms ease, visibility 300ms ease, transform 250ms ease; }
 .floating-wa.show{ opacity:1; visibility:visible; }
-
-.cta-pill{
-  position:fixed; bottom:24px; inset-inline-start:24px; z-index:80;
-  display:flex; align-items:center; gap:10px; padding:16px 26px; border-radius:var(--radius-pill);
-  background:rgba(20,20,22,0.68); color:var(--sand); border:1px solid rgba(255,255,255,0.14);
-  -webkit-backdrop-filter:blur(18px) saturate(160%); backdrop-filter:blur(18px) saturate(160%);
-  box-shadow:inset 0 1px 0 rgba(255,255,255,0.1), 0 24px 60px rgba(0,0,0,0.3);
-  opacity:0; visibility:hidden; transform:translateY(12px);
-  transition:opacity 300ms ease, visibility 300ms ease, transform 300ms ease, background 300ms ease, color 300ms ease, border-color 300ms ease;
-}
-.cta-pill.show{ opacity:1; visibility:visible; transform:translateY(0); }
-.cta-pill.inverted{ background:rgba(255,255,255,0.55); color:var(--deep); border-color:rgba(255,255,255,0.7); box-shadow:inset 0 1px 0 rgba(255,255,255,0.8), 0 24px 60px rgba(0,0,0,0.14); }
-.cta-pill svg{ width:16px; height:16px; }
-@media(max-width:640px){
-  .cta-pill{ inset-inline-start:50%; transform:translate(-50%,12px); bottom:90px; }
-  .cta-pill.show{ transform:translate(-50%,0); }
-}
 
 /* utility */
 .mt-lg{ margin-top:64px; }
