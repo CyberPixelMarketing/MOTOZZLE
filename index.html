@@ -175,13 +175,13 @@ h2{ text-transform:uppercase; font-size:clamp(2rem,4.5vw,3.5rem); font-weight:80
 [dir="rtl"] h1, [dir="rtl"] h2{ text-transform:none; }
 h3{ font-size:clamp(1.125rem,2vw,1.375rem); font-weight:600; text-transform:none; letter-spacing:0; }
 
-.eyebrow, .tracked, nav a, .btn, .chip, .cta-pill, label, .caption{
+.eyebrow, .tracked, nav a, .btn, .chip, label, .caption{
   text-transform:uppercase;
   letter-spacing:0.16em;
   font-size:0.75rem;
   font-weight:500;
 }
-[dir="rtl"] .eyebrow, [dir="rtl"] .tracked, [dir="rtl"] nav a, [dir="rtl"] .btn, [dir="rtl"] .chip, [dir="rtl"] .cta-pill, [dir="rtl"] label, [dir="rtl"] .caption{
+[dir="rtl"] .eyebrow, [dir="rtl"] .tracked, [dir="rtl"] nav a, [dir="rtl"] .btn, [dir="rtl"] .chip, [dir="rtl"] label, [dir="rtl"] .caption{
   text-transform:none; letter-spacing:0;
 }
 
@@ -460,18 +460,6 @@ footer{ background:var(--sand); padding:80px 0 32px; }
 .footer-divider{ height:1px; background:var(--deep); opacity:0.15; margin:48px 0 24px; }
 .footer-bottom{ display:flex; flex-direction:column; gap:12px; text-align:center; }
 @media(min-width:768px){ .footer-bottom{ flex-direction:row; justify-content:space-between; text-align:start; } }
-
-/* ---------- floating WhatsApp ---------- */
-.floating-wa{
-  position:fixed; bottom:24px; inset-inline-end:24px; z-index:80;
-  width:58px; height:58px; border-radius:50%; background:#25D366;
-  display:flex; align-items:center; justify-content:center;
-  box-shadow:0 24px 60px rgba(0,0,0,0.25); transition:transform 250ms ease;
-}
-.floating-wa:hover{ transform:scale(1.08); }
-.floating-wa svg{ width:28px; height:28px; fill:#fff; }
-.floating-wa{ opacity:0; visibility:hidden; transition:opacity 300ms ease, visibility 300ms ease, transform 250ms ease; }
-.floating-wa.show{ opacity:1; visibility:visible; }
 
 /* utility */
 .mt-lg{ margin-top:64px; }
@@ -821,17 +809,6 @@ footer{ background:var(--sand); padding:80px 0 32px; }
 
 </main>
 
-<!-- Floating WhatsApp -->
-<a href="#" class="floating-wa" id="floatingWa" target="_blank" rel="noopener" aria-label="WhatsApp">
-  <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.3.6 4.4 1.7 6.3L4 29l7.9-1.6c1.8.9 3.9 1.5 6.1 1.5 6.6 0 12-5.4 12-12S22.6 3 16 3zm6.9 17.1c-.3.8-1.6 1.5-2.3 1.6-.6.1-1.4.1-2.2-.1-.5-.2-1.2-.4-2-.8-3.5-1.5-5.8-5-6-5.3-.2-.3-1.4-1.9-1.4-3.6s.9-2.5 1.2-2.9c.3-.3.7-.4 1-.4h.7c.2 0 .5 0 .8.6.3.8 1 2.6 1.1 2.8.1.2.2.5 0 .7-.1.3-.2.4-.4.6-.2.3-.4.5-.6.7-.2.2-.4.4-.2.8.2.3 1 1.6 2.1 2.6 1.4 1.3 2.6 1.7 3 1.9.3.2.5.1.7-.1.2-.3.9-1.1 1.2-1.4.3-.3.5-.3.8-.2.3.1 2 1 2.4 1.1.4.2.6.3.7.4.1.3.1.8-.2 1.6z"/></svg>
-</a>
-
-<!-- Persistent CTA pill -->
-<a href="#" class="cta-pill" id="ctaPill" target="_blank" rel="noopener">
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17.5 12.5c0-2.4 2-3.5 2.1-3.6-1.1-1.6-2.9-1.9-3.5-1.9-1.5-.1-2.9.9-3.7.9-.8 0-1.9-.9-3.2-.8-1.6 0-3.1.9-4 2.4-1.7 3-.4 7.4 1.2 9.8.8 1.2 1.8 2.5 3 2.4 1.2 0 1.7-.8 3.2-.8s1.9.8 3.2.8c1.3 0 2.2-1.2 3-2.4.7-1 1-2 1-2.1-.1 0-2.3-.9-2.3-3.7z"/></svg>
-  <span data-i18n="cta.pill">Get The App</span>
-</a>
-
 <script>
 /* ============================================================================
    CONFIG — EDIT ME  |  إعدادات الموقع — عدّل هنا
@@ -866,9 +843,6 @@ const CONFIG = {
 
 // ---- apply CONFIG to the page (no need to edit below this line) ----------
 document.addEventListener('DOMContentLoaded', () => {
-  const waLink = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(CONFIG.whatsappMessage)}`;
-  document.getElementById('floatingWa').href = waLink;
-  document.getElementById('ctaPill').href = waLink;
   document.getElementById('appStoreBtn').href = CONFIG.appStoreUrl;
   document.getElementById('playStoreBtn').href = CONFIG.googlePlayUrl;
   document.getElementById('ctaDownloadBtn').href = CONFIG.appStoreUrl;
@@ -969,7 +943,6 @@ const I18N_AR = {
   "cta.h2": "حمّل موتوزل<br>وابدأ اليوم",
   "cta.p": "آلاف السيارات والتجار وخيارات التأجير الموثّقة — في جيبك مباشرة.",
   "cta.btn": "حمّل التطبيق",
-  "cta.pill": "حمّل التطبيق",
 
   "faq.eyebrow": "أسئلة",
   "faq.h2": "الأسئلة الشائعة",
@@ -1045,46 +1018,19 @@ const I18N_AR = {
 })();
 
 /* ============================================================================
-   HEADER SCROLL STATE + FLOATING BUTTONS INVERT
+   HEADER SCROLL STATE
 ============================================================================ */
 (function(){
   const header = document.getElementById('siteHeader');
-  const floatingWa = document.getElementById('floatingWa');
-  const ctaPill = document.getElementById('ctaPill');
   const hero = document.querySelector('.hero');
   let heroHeight = hero ? hero.offsetHeight : 600;
 
   function onScroll(){
     if(window.scrollY > 80){ header.classList.add('scrolled'); } else { header.classList.remove('scrolled'); }
-    if(window.scrollY > heroHeight * 0.6){
-      floatingWa.classList.add('show');
-      ctaPill.classList.add('show');
-    } else {
-      floatingWa.classList.remove('show');
-      ctaPill.classList.remove('show');
-    }
   }
   window.addEventListener('scroll', onScroll, {passive:true});
   window.addEventListener('resize', () => { heroHeight = hero ? hero.offsetHeight : 600; });
   onScroll();
-
-  // invert cta pill colors when over a dark panel
-  const darkSections = document.querySelectorAll('.panel-deep');
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting){
-        ctaPill.classList.add('inverted');
-      }
-    });
-  }, {rootMargin:'-50% 0px -50% 0px'});
-  darkSections.forEach(s => io.observe(s));
-  const lightSections = document.querySelectorAll('.panel-sand, .stats-strip');
-  const io2 = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting){ ctaPill.classList.remove('inverted'); }
-    });
-  }, {rootMargin:'-50% 0px -50% 0px'});
-  lightSections.forEach(s => io2.observe(s));
 })();
 
 /* ============================================================================
