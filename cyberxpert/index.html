@@ -1,0 +1,1631 @@
+<!DOCTYPE html>
+<!--
+============================================================================
+  CYBER XPERT — one-page company site  |  ملف واحد لموقع سايبر إكسبرت
+============================================================================
+  HOW TO EDIT THIS SITE  /  طريقة تعديل هذا الموقع
+  ----------------------------------------------------------------------
+  EN — Everything you will normally change lives in ONE block: look for
+  "CONFIG — EDIT ME" inside the first <script> tag in the <head>.
+  Phone, WhatsApp, email, address, map, working hours, social links,
+  stats, colors and fonts are all there. Change a value once and it
+  updates everywhere on the page.
+
+  AR — كل ما تحتاج تغييره موجود في مكان واحد: ابحث عن العبارة
+  "CONFIG — EDIT ME" داخل أول وسم <script> في أعلى الملف. الهاتف
+  والواتساب والبريد والعنوان والخريطة وساعات العمل وروابط التواصل
+  والأرقام والألوان والخطوط كلها هناك. غيّر القيمة مرة واحدة فتتحدث
+  في كل الصفحة.
+
+  TEXT / النصوص
+  - English text lives directly in the HTML below (good for Google).
+    النص الإنجليزي موجود داخل HTML مباشرة (أفضل لمحركات البحث).
+  - ALL Arabic text lives in ONE dictionary: search for "I18N_AR".
+    كل النص العربي في قاموس واحد: ابحث عن "I18N_AR".
+
+  ADD / REMOVE A CARD  /  إضافة أو حذف بطاقة
+  - Service cards: copy one <article class="diff-card"> … </article>
+    block to add, delete it to remove. Give the new keys an Arabic
+    entry in I18N_AR.  انسخ البطاقة لإضافة واحدة، احذفها للإزالة.
+  - Industry cards: same, with <article class="ind-card">.
+
+  IMAGES  /  الصور  (put these files next to index.html)
+  - logo.png   → the Cyber Xpert wordmark (transparent background)
+                 شعار سايبر إكسبرت بخلفية شفافة
+  All icons are inline SVG, so no other image files are needed.
+  جميع الأيقونات مرسومة SVG داخل الملف، لا حاجة لصور أخرى.
+
+  DOMAIN  /  النطاق
+  - The site address appears in the <head> SEO tags (canonical,
+    hreflang, Open Graph). Search for "cyberxpert.ae" and replace it
+    if your domain is different.
+    عنوان الموقع موجود في وسوم SEO بالأعلى: ابحث عن "cyberxpert.ae".
+
+  LANGUAGE LINKS  /  روابط اللغة
+  - /ar  opens Arabic, /en opens English (folders ar/ and en/ redirect).
+    Also works as ?lang=ar or #ar. The visitor's choice is remembered.
+============================================================================
+-->
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cyber Xpert — AI Agents, AI Development &amp; Mobile Apps in Dubai, UAE | سايبر إكسبرت</title>
+<meta name="description" content="Cyber Xpert is a UAE AI development company building AI agents for WhatsApp and Instagram, machine-learning solutions, mobile apps and websites for businesses in Dubai and across the GCC.">
+<meta name="keywords" content="AI development company Dubai, AI agents UAE, WhatsApp AI agent, Instagram DM automation, chatbot development Dubai, machine learning UAE, mobile app development Dubai, app developers UAE, AI automation for business, شركة ذكاء اصطناعي دبي, تطوير تطبيقات الجوال دبي, وكيل ذكاء اصطناعي واتساب, روبوت محادثة, أتمتة انستقرام, تعلم الآلة الإمارات, تصميم مواقع دبي">
+<meta name="author" content="Cyber Xpert">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://cyberxpert.ae/">
+<link rel="alternate" hreflang="en" href="https://cyberxpert.ae/en">
+<link rel="alternate" hreflang="ar" href="https://cyberxpert.ae/ar">
+<link rel="alternate" hreflang="x-default" href="https://cyberxpert.ae/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cyber Xpert">
+<meta property="og:title" content="Cyber Xpert — AI Agents, AI Development &amp; Mobile Apps in the UAE">
+<meta property="og:description" content="AI agents that sell on WhatsApp and Instagram, machine learning, mobile apps and websites, built in the UAE. سايبر إكسبرت: وكلاء ذكاء اصطناعي وتطبيقات جوال ومواقع.">
+<meta property="og:locale" content="en_AE">
+<meta property="og:locale:alternate" content="ar_AE">
+<meta property="og:url" content="https://cyberxpert.ae/">
+<meta property="og:image" content="https://cyberxpert.ae/logo.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#161618">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23161618'/%3E%3Ctext x='16' y='21' text-anchor='middle' font-family='Arial,sans-serif' font-weight='800' font-size='13' fill='%23E7E6E4'%3ECX%3C/text%3E%3C/svg%3E">
+
+<!-- Fonts: Poppins (display) + Jost (body) + Cairo (Arabic) — same as MOTOZZLE -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Jost:wght@300;400;500&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<script>
+/* ============================================================================
+   CONFIG — EDIT ME  |  إعدادات الموقع — عدّل هنا
+   ----------------------------------------------------------------------
+   EN: Change any value below. Everything on the page reads from here.
+   AR: غيّر أي قيمة بالأسفل. كل عناصر الصفحة تقرأ من هنا مباشرة.
+============================================================================ */
+const CONFIG = {
+  // اسم الشركة بالإنجليزي والعربي | Company name in English and Arabic
+  name:   "Cyber Xpert",
+  nameAr: "سايبر إكسبرت",
+
+  // ملف الشعار (بجانب index.html) | Logo file next to index.html
+  logo: "logo.png",
+
+  // رابط الموقع الكامل | Full website address
+  siteUrl: "https://cyberxpert.ae/",
+
+  // رقم الواتساب: أرقام فقط بالصيغة الدولية بدون + | WhatsApp: digits only, international format, no +
+  whatsapp: "971500000000",
+  // الرسالة الجاهزة العامة | General prefilled WhatsApp message
+  whatsappMessage:   "Hi Cyber Xpert, I'd like to discuss a project.",
+  whatsappMessageAr: "مرحباً سايبر إكسبرت، أود مناقشة مشروع.",
+  // رسالة عند الضغط على خدمة معيّنة ({item} = اسم الخدمة) | Message when a specific service is tapped ({item} = its name)
+  whatsappItemMessage:   "Hi Cyber Xpert, I'm interested in: {item}",
+  whatsappItemMessageAr: "مرحباً سايبر إكسبرت، أنا مهتم بـ: {item}",
+
+  // الهاتف كما يظهر، ورقم الاتصال | Phone as displayed, and the dialable number
+  phone:     "+971 50 000 0000",
+  phoneDial: "+971500000000",
+
+  // البريد الإلكتروني | Email
+  email: "hello@cyberxpert.ae",
+
+  // العنوان كما يظهر | Address as displayed
+  address:   "Dubai, United Arab Emirates",
+  addressAr: "دبي، الإمارات العربية المتحدة",
+
+  // ساعات العمل | Working hours
+  hours:   "Mon – Fri, 9:00 – 18:00",
+  hoursAr: "الإثنين – الجمعة، 9:00 – 18:00",
+
+  // موقع الخريطة: اكتب اسم المكان أو الإحداثيات | Map location: a place name or "lat,lng"
+  mapQuery: "Dubai, United Arab Emirates",
+
+  // روابط التواصل الاجتماعي — اتركها فارغة "" لإخفاء الأيقونة | Social links — leave "" to hide the icon
+  social: {
+    instagram: "",
+    linkedin:  "",
+    x:         "",
+    facebook:  "",
+    tiktok:    ""
+  },
+
+  // الأرقام في شريط الإحصاءات | Numbers in the stats strip
+  stats: [
+    { value: 14,  suffix: "",   label: "Industries Served",   labelAr: "قطاعاً نخدمه" },
+    { value: 24,  suffix: "/7", label: "AI Agent Availability", labelAr: "عمل وكلاء الذكاء الاصطناعي" },
+    { value: 2,   suffix: "",   label: "Languages: EN + AR",  labelAr: "لغتان: عربي وإنجليزي" },
+    { value: 1,   suffix: "",   label: "Business Day Reply",  labelAr: "يوم عمل للرد عليك" }
+  ],
+
+  // الألوان (نفس ألوان موتوزل) | Colors (same palette as MOTOZZLE)
+  colors: {
+    deep:       "#161618",  // الخلفية الداكنة | dark background
+    deepSoft:   "#212124",  // أفتح قليلاً | slightly lighter dark
+    sand:       "#E7E6E4",  // الخلفية الفاتحة | light background
+    sandSoft:   "#DBDAD8",  // بطاقات على الفاتح | cards on light
+    accent:     "#B8B7B4",  // لون مميز معدني | metallic accent
+    accentPale: "#D6D5D2",  // درجة أفتح من المميز | paler accent
+    ink:        "#1E251E"   // لون النص | body text
+  },
+
+  // الخطوط | Fonts (must also be in the Google Fonts link above)
+  fonts: {
+    display: "'Poppins','Cairo',sans-serif",
+    body:    "'Jost','Cairo',sans-serif",
+    arabic:  "'Cairo',sans-serif"
+  }
+};
+
+/* apply colors + fonts immediately (no need to edit) */
+(function(){
+  const r = document.documentElement.style, c = CONFIG.colors, f = CONFIG.fonts;
+  r.setProperty('--deep', c.deep); r.setProperty('--deep-soft', c.deepSoft);
+  r.setProperty('--sand', c.sand); r.setProperty('--sand-soft', c.sandSoft);
+  r.setProperty('--accent', c.accent); r.setProperty('--accent-pale', c.accentPale);
+  r.setProperty('--ink', c.ink);
+  r.setProperty('--font-display', f.display); r.setProperty('--font-body', f.body); r.setProperty('--font-ar', f.arabic);
+})();
+</script>
+
+<!-- JSON-LD structured data (contact details are added from CONFIG at load time) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Cyber Xpert services",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"item":{"@type":"Service","name":"AI Agents for WhatsApp & Instagram","provider":{"@type":"Organization","name":"Cyber Xpert"},"areaServed":"AE"}},
+    {"@type":"ListItem","position":2,"item":{"@type":"Service","name":"AI & Machine Learning Development","provider":{"@type":"Organization","name":"Cyber Xpert"},"areaServed":"AE"}},
+    {"@type":"ListItem","position":3,"item":{"@type":"Service","name":"Mobile App Development","provider":{"@type":"Organization","name":"Cyber Xpert"},"areaServed":"AE"}},
+    {"@type":"ListItem","position":4,"item":{"@type":"Service","name":"Websites & E-Commerce","provider":{"@type":"Organization","name":"Cyber Xpert"},"areaServed":"AE"}}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"What does an AI agent actually do for my business?","acceptedAnswer":{"@type":"Answer","text":"It answers customer messages on WhatsApp and Instagram around the clock, qualifies leads, books appointments, sends payment links and passes confirmed orders to your team or courier, in Arabic and English."}},
+    {"@type":"Question","name":"How long does it take to launch?","acceptedAnswer":{"@type":"Answer","text":"A ready-made AI agent can be live within days. Custom AI systems and mobile apps usually take one to four months depending on scope; you get a clear timeline after the free consultation."}},
+    {"@type":"Question","name":"Do you build both iOS and Android apps?","acceptedAnswer":{"@type":"Answer","text":"Yes. We build native and cross-platform apps for iOS and Android, plus the admin dashboards and back-end systems behind them, and we handle App Store and Google Play publishing."}},
+    {"@type":"Question","name":"Will the AI speak Arabic?","acceptedAnswer":{"@type":"Answer","text":"Yes. Every agent we deliver works in Arabic and English and is trained on your own products, prices and policies so its answers stay on-brand."}},
+    {"@type":"Question","name":"What happens after launch?","acceptedAnswer":{"@type":"Answer","text":"We stay on. Monitoring, updates, retraining and new features are covered by an ongoing support plan, with a direct line to the engineers who built your product."}}
+  ]
+}
+</script>
+
+<style>
+/* ==========================================================================
+   DESIGN TOKENS — values come from CONFIG.colors above. These defaults are
+   a fallback only; edit the colors in CONFIG.
+   ========================================================================== */
+:root{
+  --deep:       #161618;
+  --deep-soft:  #212124;
+  --sand:       #E7E6E4;
+  --sand-soft:  #DBDAD8;
+  --accent:     #B8B7B4;
+  --accent-pale:#D6D5D2;
+  --ink:        #1E251E;
+  --font-display:'Poppins','Cairo',sans-serif;
+  --font-body:'Jost','Cairo',sans-serif;
+  --font-ar:'Cairo',sans-serif;
+
+  --radius-a: 48px 48px 8px 48px;
+  --radius-b: 48px 48px 48px 8px;
+  --radius-card: 32px 8px 32px 8px;
+  --radius-card-alt: 8px 32px 8px 32px;
+  --radius-pill: 999px 999px 12px 999px;
+  --radius-img: 24px 24px 24px 4px;
+
+  --container: 1280px;
+  --ease: cubic-bezier(0.22,1,0.36,1);
+}
+@media (max-width:768px){
+  :root{
+    --radius-a: 28px 28px 8px 28px;
+    --radius-b: 28px 28px 28px 8px;
+    --radius-card: 22px 8px 22px 8px;
+    --radius-card-alt: 8px 22px 8px 22px;
+  }
+}
+/* mirror asymmetric radii in Arabic */
+[dir="rtl"]{
+  --radius-a: 48px 48px 48px 8px;
+  --radius-b: 48px 48px 8px 48px;
+  --radius-card: 8px 32px 8px 32px;
+  --radius-card-alt: 32px 8px 32px 8px;
+  --radius-pill: 999px 999px 999px 12px;
+  --radius-img: 24px 24px 4px 24px;
+}
+@media (max-width:768px){
+  [dir="rtl"]{
+    --radius-a: 28px 28px 28px 8px;
+    --radius-b: 28px 28px 8px 28px;
+    --radius-card: 8px 22px 8px 22px;
+    --radius-card-alt: 22px 8px 22px 8px;
+  }
+}
+
+*{box-sizing:border-box; margin:0; padding:0;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto;}
+  *{animation-duration:0.01ms !important; animation-iteration-count:1 !important; scroll-behavior:auto !important;}
+  .reveal{ transform:none !important; }
+  .diff-card:hover, .btn:hover, .chip:hover, .ind-card:hover{ transform:none !important; }
+}
+body{
+  font-family:var(--font-body);
+  font-weight:300;
+  background:var(--sand);
+  color:var(--ink);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+[dir="rtl"] body{ font-family:var(--font-ar); }
+img,svg{max-width:100%; display:block;}
+a{color:inherit; text-decoration:none;}
+ul{list-style:none;}
+button{font-family:inherit; cursor:pointer; border:none; background:none; color:inherit;}
+.sr-only{ position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
+
+h1,h2,h3,.display{
+  font-family:var(--font-display);
+  font-weight:700;
+  line-height:1.05;
+  letter-spacing:-0.01em;
+}
+[dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3, [dir="rtl"] .display{
+  font-family:var(--font-ar); letter-spacing:0; line-height:1.3;
+}
+h1{ text-transform:uppercase; font-size:clamp(2.6rem,7vw,5.5rem); font-weight:800; }
+h2{ text-transform:uppercase; font-size:clamp(2rem,4.5vw,3.5rem); font-weight:800; }
+[dir="rtl"] h1, [dir="rtl"] h2{ text-transform:none; }
+h3{ font-size:clamp(1.125rem,2vw,1.375rem); font-weight:600; text-transform:none; letter-spacing:0; }
+
+.eyebrow, .tracked, nav a, .btn, .chip, .caption, .field label, .more-toggle{
+  text-transform:uppercase;
+  letter-spacing:0.16em;
+  font-size:0.75rem;
+  font-weight:500;
+}
+[dir="rtl"] .eyebrow, [dir="rtl"] .tracked, [dir="rtl"] nav a, [dir="rtl"] .btn, [dir="rtl"] .chip, [dir="rtl"] .caption, [dir="rtl"] .field label, [dir="rtl"] .more-toggle{
+  text-transform:none; letter-spacing:0; font-size:0.875rem;
+}
+
+.container{ max-width:var(--container); margin:0 auto; padding:0 24px; }
+@media(min-width:768px){ .container{ padding:0 48px; } }
+@media(min-width:1024px){ .container{ padding:0 80px; } }
+
+section{ padding:80px 0; position:relative; overflow:hidden; }
+@media(min-width:768px){ section{ padding:120px 0; } }
+@media(min-width:1024px){ section{ padding:160px 0; } }
+.panel-deep{ background:linear-gradient(165deg, #1c1c1f 0%, var(--deep) 55%, #0c0c0d 100%); color:var(--sand); }
+.panel-sand{ background:var(--sand); color:var(--ink); }
+.panel-deep::before, .panel-deep::after, .panel-sand::before{ content:''; position:absolute; border-radius:50%; pointer-events:none; z-index:0; }
+.panel-deep::before{ width:560px; height:560px; top:-220px; inset-inline-start:-120px; background:radial-gradient(circle, rgba(255,255,255,0.05), transparent 70%); }
+.panel-deep::after{ width:480px; height:480px; bottom:-180px; inset-inline-end:-100px; background:radial-gradient(circle, rgba(255,255,255,0.035), transparent 70%); }
+.panel-sand::before{ width:480px; height:480px; top:-160px; inset-inline-end:-100px; background:radial-gradient(circle, rgba(20,20,22,0.035), transparent 70%); }
+.panel-deep > .container, .panel-sand > .container{ position:relative; z-index:1; }
+
+.section-head{ text-align:center; max-width:760px; margin:0 auto 64px; }
+.section-head p{ max-width:60ch; margin-inline:auto; }
+.section-head .eyebrow{ color:#6E6D6A; display:block; margin-bottom:16px; }
+.panel-deep .section-head .eyebrow{ color:var(--accent); }
+.section-head p{ opacity:0.8; margin-top:20px; }
+.rule{ width:160px; height:1px; background:var(--accent); opacity:0.4; margin:28px auto 0; }
+.panel-sand .rule{ background:var(--ink); opacity:0.2; }
+
+/* reveal on scroll */
+.reveal{ opacity:0; transform:translateY(24px); transition:opacity 700ms var(--ease), transform 700ms var(--ease); }
+.reveal.is-visible{ opacity:1; transform:translateY(0); }
+
+/* ---------- header ---------- */
+header{
+  position:fixed; top:0; left:0; right:0; z-index:100;
+  padding:20px 0;
+  background:transparent;
+  color:var(--deep);
+  transition:background 300ms ease, box-shadow 300ms ease, border-color 300ms ease, color 300ms ease;
+  border-bottom:1px solid transparent;
+}
+header.scrolled{
+  background:rgba(11,11,12,0.62);
+  -webkit-backdrop-filter:blur(18px) saturate(160%);
+  backdrop-filter:blur(18px) saturate(160%);
+  color:var(--sand);
+  border-bottom:1px solid rgba(255,255,255,0.10);
+  box-shadow:0 8px 32px rgba(0,0,0,0.18);
+}
+header.menu-open{ color:var(--sand); }
+header .container{ display:flex; align-items:center; justify-content:space-between; gap:16px; }
+.logo{ display:flex; align-items:center; flex:none; }
+.logo-img{ height:18px; width:auto; transition:filter 300ms ease; }
+@media(min-width:768px){ .logo-img{ height:22px; } }
+header.scrolled .logo-img, header.menu-open .logo-img{ filter:brightness(0) invert(1); }
+
+.nav-desktop{ display:none; align-items:center; gap:32px; }
+@media(min-width:1024px){ .nav-desktop{ display:flex; } }
+.nav-desktop a{ color:inherit; opacity:0.85; transition:opacity 250ms ease, color 250ms ease; }
+.nav-desktop a:hover{ opacity:1; color:var(--accent); }
+.lang-toggle{ color:inherit; opacity:0.85; border:1px solid currentColor; padding:8px 14px; min-height:40px; border-radius:var(--radius-pill); transition:all 250ms ease; background:rgba(128,128,128,0.08); -webkit-backdrop-filter:blur(8px); backdrop-filter:blur(8px); font-size:0.75rem; letter-spacing:0.16em; font-weight:500; }
+.lang-toggle:hover{ opacity:1; border-color:var(--accent); color:var(--accent); }
+#langToggleDesktop{ font-family:var(--font-ar); letter-spacing:0; font-size:0.875rem; }
+[dir="rtl"] #langToggleDesktop{ font-family:var(--font-body); letter-spacing:0.16em; font-size:0.75rem; text-transform:uppercase; }
+
+.header-right{ display:flex; align-items:center; gap:12px; }
+@media(min-width:1024px){ .header-right{ display:none; } }
+.hamburger{ width:44px; height:44px; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:6px; }
+.hamburger span{ width:22px; height:1.5px; background:currentColor; border-radius:2px; transition:transform 250ms ease, opacity 250ms ease; }
+.hamburger.open span:nth-child(1){ transform:translateY(7.5px) rotate(45deg); }
+.hamburger.open span:nth-child(2){ opacity:0; }
+.hamburger.open span:nth-child(3){ transform:translateY(-7.5px) rotate(-45deg); }
+
+.menu-overlay{
+  position:fixed; inset:0; background:rgba(11,11,12,0.82); z-index:99;
+  -webkit-backdrop-filter:blur(28px) saturate(160%);
+  backdrop-filter:blur(28px) saturate(160%);
+  display:flex; flex-direction:column; align-items:center; justify-content:center; gap:28px;
+  opacity:0; visibility:hidden; transition:opacity 350ms ease, visibility 350ms;
+}
+.menu-overlay.open{ opacity:1; visibility:visible; }
+.menu-overlay a{
+  font-family:var(--font-display); font-weight:700; text-transform:uppercase; font-size:2rem; color:var(--sand);
+  opacity:0; transform:translateY(16px); transition:opacity 400ms ease, transform 400ms ease;
+}
+[dir="rtl"] .menu-overlay a{ text-transform:none; font-family:var(--font-ar); }
+.menu-overlay.open a{ opacity:1; transform:translateY(0); }
+.menu-overlay a:hover{ color:var(--accent); }
+
+/* ---------- hero ---------- */
+.hero{
+  min-height:100svh; display:flex; align-items:center; justify-content:center; text-align:center;
+  position:relative; color:var(--ink); padding-top:120px;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(0,0,0,0.05), transparent 55%),
+    linear-gradient(180deg, var(--sand) 0%, var(--sand-soft) 100%);
+  overflow:hidden;
+}
+.hero-pattern{
+  position:absolute; inset:0; z-index:0; opacity:0.7;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90' viewBox='0 0 90 90'%3E%3Cg fill='none' stroke='%2314181a' stroke-width='1' stroke-opacity='0.05'%3E%3Crect x='10' y='10' width='70' height='70'/%3E%3Crect x='10' y='10' width='70' height='70' transform='rotate(45 45 45)'/%3E%3Ccircle cx='45' cy='45' r='16'/%3E%3Ccircle cx='45' cy='45' r='30'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat:repeat;
+  background-size:90px 90px;
+}
+.hero-skyline{ position:absolute; bottom:0; left:0; right:0; z-index:0; opacity:0.09; }
+.hero-inner{ position:relative; z-index:1; max-width:46rem; padding:0 24px 64px; }
+.hero-logo{ width:min(340px, 72vw); height:auto; margin:0 auto 28px; }
+.hero .tagline{ display:block; color:var(--deep); opacity:0.6; margin-bottom:28px; }
+.hero h1{ color:var(--deep); font-size:clamp(1.9rem,4.6vw,3.25rem); }
+.hero h1 .accent-txt{ color:var(--deep); -webkit-text-stroke:1px var(--deep); opacity:0.35; }
+.hero p{ max-width:34rem; margin:24px auto 0; color:var(--ink); opacity:0.8; font-size:1.0625rem; }
+.hero-ctas{ display:flex; flex-wrap:wrap; gap:16px; justify-content:center; margin-top:40px; }
+
+.btn{ display:inline-flex; align-items:center; justify-content:center; gap:10px; padding:17px 34px; min-height:48px; border-radius:var(--radius-pill); transition:all 300ms ease; white-space:nowrap; }
+.btn-primary{
+  background:linear-gradient(180deg, #2B2B2E 0%, #0B0B0C 60%, #050505 100%);
+  color:var(--sand);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.18), 0 16px 40px rgba(0,0,0,0.25);
+  border:1px solid rgba(255,255,255,0.08);
+}
+.btn-primary:hover{ transform:translateY(-2px); box-shadow:inset 0 1px 0 rgba(255,255,255,0.25), 0 20px 48px rgba(0,0,0,0.32); }
+.btn-outline{ background:rgba(128,128,128,0.06); -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px); color:var(--deep); border:1px solid rgba(20,20,20,0.35); }
+.btn-outline:hover{ background:rgba(20,20,20,0.06); border-color:var(--deep); }
+.btn-primary-onDark{
+  background:linear-gradient(180deg, #FAFAF9 0%, var(--sand-soft) 100%);
+  color:var(--deep);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.9), 0 16px 40px rgba(0,0,0,0.35);
+  border:1px solid rgba(255,255,255,0.6);
+}
+.btn-primary-onDark:hover{ transform:translateY(-2px); box-shadow:inset 0 1px 0 #FAFAF9, 0 20px 48px rgba(0,0,0,0.4); }
+.btn svg{ width:18px; height:18px; flex:none; }
+[dir="rtl"] .btn svg.dir-icon{ transform:scaleX(-1); }
+
+/* ---------- stats strip ---------- */
+.stats-strip{ padding:56px 0; background:var(--sand-soft); }
+.stats-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:32px; text-align:center; }
+@media(min-width:768px){ .stats-grid{ grid-template-columns:repeat(4,1fr); } }
+.stat-badge{
+  width:56px; height:56px; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 16px;
+  background:rgba(20,20,22,0.85); -webkit-backdrop-filter:blur(14px) saturate(160%); backdrop-filter:blur(14px) saturate(160%);
+  border:1px solid rgba(255,255,255,0.10); box-shadow:inset 0 1px 0 rgba(255,255,255,0.10), 0 12px 28px rgba(0,0,0,0.14);
+}
+.stat-badge svg{ width:24px; height:24px; stroke:var(--sand); }
+.stat-value{ font-family:var(--font-display); font-size:1.75rem; font-weight:600; color:var(--deep); direction:ltr; }
+.stat-label{ font-size:0.8125rem; color:var(--ink); opacity:0.75; margin-top:6px; }
+
+/* ---------- capability chips ---------- */
+.chip-row{ display:flex; gap:16px; overflow-x:auto; padding:8px 4px 24px; scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch; scrollbar-width:none; }
+.chip-row::-webkit-scrollbar{ display:none; }
+@media(min-width:1024px){ .chip-row{ flex-wrap:wrap; justify-content:center; overflow:visible; } }
+.chip{
+  flex:none; scroll-snap-align:start; display:flex; align-items:center; gap:12px;
+  background:rgba(20,20,22,0.82); color:var(--sand); padding:16px 26px; border-radius:var(--radius-pill);
+  -webkit-backdrop-filter:blur(16px) saturate(160%); backdrop-filter:blur(16px) saturate(160%);
+  border:1px solid rgba(255,255,255,0.10); box-shadow:inset 0 1px 0 rgba(255,255,255,0.08), 0 12px 30px rgba(0,0,0,0.12);
+  transition:transform 300ms ease, background 300ms ease;
+}
+.chip:hover{ transform:translateY(-3px); background:rgba(30,30,33,0.88); }
+.chip svg{ width:22px; height:22px; stroke:var(--accent); flex:none; }
+
+/* ---------- numbered service cards ---------- */
+.diff-grid{ display:grid; grid-template-columns:1fr; gap:24px; align-items:start; }
+@media(min-width:640px){ .diff-grid{ grid-template-columns:repeat(2,1fr); } }
+@media(min-width:1024px){ .diff-grid{ grid-template-columns:repeat(4,1fr); } }
+.diff-card{
+  background:linear-gradient(160deg, rgba(20,20,22,0.90), rgba(20,20,22,0.80));
+  -webkit-backdrop-filter:blur(20px) saturate(160%); backdrop-filter:blur(20px) saturate(160%);
+  border:1px solid rgba(255,255,255,0.10);
+  border-radius:var(--radius-card); padding:36px 28px; color:var(--sand);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.08), 0 20px 50px rgba(0,0,0,0.14);
+  transition:transform 300ms ease, box-shadow 300ms ease;
+}
+.diff-card:nth-child(even){ border-radius:var(--radius-card-alt); }
+.diff-card:hover{ transform:translateY(-4px); box-shadow:inset 0 1px 0 rgba(255,255,255,0.12), 0 28px 64px rgba(0,0,0,0.2); }
+.diff-top{ display:flex; align-items:flex-start; justify-content:space-between; margin-bottom:24px; }
+.diff-num{ font-family:var(--font-display); font-size:2.5rem; color:var(--sand); opacity:0.45; line-height:1; }
+.diff-card svg.ornament{ width:22px; height:22px; stroke:var(--accent); }
+.diff-card h3{ color:var(--sand); margin-bottom:12px; }
+.diff-card > p{ font-size:0.875rem; color:var(--sand); opacity:0.75; }
+.more-toggle{ display:inline-flex; align-items:center; gap:8px; margin-top:20px; color:var(--accent); min-height:44px; }
+.more-toggle svg{ width:14px; height:14px; transition:transform 300ms ease; }
+.diff-card.open .more-toggle svg{ transform:rotate(45deg); }
+.more{ max-height:0; overflow:hidden; transition:max-height 400ms var(--ease); }
+.more ul{ padding-top:8px; display:flex; flex-direction:column; gap:10px; }
+.more li{ font-size:0.8125rem; opacity:0.8; display:flex; gap:10px; align-items:flex-start; }
+.more li::before{ content:''; flex:none; width:6px; height:6px; border-radius:50%; background:var(--accent); margin-top:8px; }
+.more .btn{ margin-top:20px; padding:13px 22px; width:100%; }
+
+/* ---------- AI agents active list ---------- */
+.active-panel{
+  background:rgba(18,18,20,0.92); -webkit-backdrop-filter:blur(26px) saturate(160%); backdrop-filter:blur(26px) saturate(160%);
+  border:1px solid rgba(255,255,255,0.10); box-shadow:inset 0 1px 0 rgba(255,255,255,0.08), 0 30px 70px rgba(0,0,0,0.2);
+  border-radius:var(--radius-a); padding:108px 24px 40px; position:relative; overflow:hidden; color:var(--sand);
+}
+@media(min-width:768px){ .active-panel{ padding:96px 64px 64px; } }
+.active-ghost{ position:absolute; top:24px; inset-inline-end:32px; font-family:var(--font-display); font-size:4rem; opacity:0.12; line-height:1; }
+.active-orn{ position:absolute; top:32px; inset-inline-start:32px; width:26px; height:26px; stroke:var(--accent); }
+.active-panel .section-head .eyebrow{ color:var(--accent); }
+.active-panel .section-head p{ color:var(--sand); }
+.active-grid{ display:grid; gap:0; margin-top:48px; }
+@media(min-width:768px){ .active-grid{ grid-template-columns:1fr 1fr; gap:48px; align-items:center; } }
+.active-rows{ display:flex; flex-direction:column; }
+.active-row{
+  padding:18px 4px; border-bottom:1px solid rgba(231,230,228,0.12); text-align:start; width:100%;
+  display:flex; align-items:center; justify-content:space-between; gap:12px; cursor:pointer;
+  transition:background 250ms ease, color 250ms ease, border-radius 250ms ease, padding 250ms ease;
+}
+.active-row span{ font-size:0.8125rem; text-transform:uppercase; letter-spacing:0.14em; font-weight:500; }
+[dir="rtl"] .active-row span{ text-transform:none; letter-spacing:0; font-size:0.9375rem; }
+.active-row svg{ width:16px; height:16px; opacity:0.5; flex:none; }
+[dir="rtl"] .active-row svg{ transform:scaleX(-1); }
+.active-row.active{
+  background:rgba(250,250,249,0.92); -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px);
+  color:var(--deep); border-radius:var(--radius-card); padding:18px 20px; border-bottom-color:transparent;
+  box-shadow:inset 0 1px 0 #FAFAF9;
+}
+.active-row.active svg{ opacity:1; }
+.active-detail{ margin-top:32px; position:relative; min-height:220px; }
+@media(min-width:768px){ .active-detail{ margin-top:0; } }
+.detail-pane{ position:absolute; inset:0; opacity:0; visibility:hidden; transition:opacity 250ms ease, visibility 250ms; }
+.detail-pane.active{ position:relative; opacity:1; visibility:visible; }
+.detail-pane h4{ font-family:var(--font-display); font-size:1.5rem; line-height:1.2; margin-bottom:14px; color:var(--accent-pale); }
+[dir="rtl"] .detail-pane h4{ font-family:var(--font-ar); }
+.detail-pane p{ opacity:0.8; font-size:0.9375rem; }
+.detail-pane .btn{ margin-top:24px; padding:13px 26px; }
+
+/* ---------- industries carousel ---------- */
+.gallery-wrap{ position:relative; }
+.gallery-track{ display:flex; gap:24px; overflow-x:auto; scroll-snap-type:x mandatory; padding:8px 4px 32px; -webkit-overflow-scrolling:touch; scrollbar-width:none; }
+.gallery-track::-webkit-scrollbar{ display:none; }
+.ind-card{
+  flex:none; scroll-snap-align:center; width:76vw; max-width:290px;
+  background:rgba(255,255,255,0.06); -webkit-backdrop-filter:blur(20px) saturate(160%); backdrop-filter:blur(20px) saturate(160%);
+  border:1px solid rgba(255,255,255,0.14); border-radius:var(--radius-img); padding:32px 26px; position:relative;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.12), 0 24px 60px rgba(0,0,0,0.35);
+  display:flex; flex-direction:column; transition:transform 300ms ease, background 300ms ease;
+}
+.ind-card:hover{ transform:translateY(-4px); background:rgba(255,255,255,0.09); }
+.ind-icon{ width:56px; height:56px; border-radius:50%; display:flex; align-items:center; justify-content:center; border:1px solid rgba(255,255,255,0.18); margin-bottom:28px; }
+.ind-icon svg{ width:24px; height:24px; stroke:var(--accent-pale); }
+.ind-num{ position:absolute; top:28px; inset-inline-end:26px; font-family:var(--font-display); font-size:1.25rem; opacity:0.3; }
+.ind-card h3{ color:var(--sand); font-size:1.125rem; margin-bottom:10px; }
+.ind-card p{ font-size:0.875rem; opacity:0.72; flex:1; }
+.ind-link{ margin-top:22px; display:inline-flex; align-items:center; gap:8px; color:var(--accent); font-size:0.75rem; letter-spacing:0.16em; text-transform:uppercase; font-weight:500; min-height:44px; }
+[dir="rtl"] .ind-link{ text-transform:none; letter-spacing:0; font-size:0.875rem; }
+.ind-link svg{ width:14px; height:14px; }
+[dir="rtl"] .ind-link svg{ transform:scaleX(-1); }
+.gallery-arrows{ display:flex; gap:14px; justify-content:center; margin-top:8px; }
+.g-arrow{
+  width:46px; height:46px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+  background:rgba(255,255,255,0.06); -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px);
+  border:1px solid rgba(255,255,255,0.18); color:var(--sand); opacity:0.75; transition:all 250ms ease;
+}
+.g-arrow:hover{ opacity:1; border-color:var(--accent); color:var(--accent); background:rgba(255,255,255,0.1); }
+.g-arrow svg{ width:18px; height:18px; }
+[dir="rtl"] .g-arrow svg{ transform:scaleX(-1); }
+
+/* ---------- process / spec strip ---------- */
+.steps-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:40px 24px; text-align:center; }
+@media(min-width:768px){ .steps-grid{ grid-template-columns:repeat(4,1fr); } }
+.step-badge{ width:56px; height:56px; border-radius:50%; background:var(--deep); display:flex; align-items:center; justify-content:center; margin:0 auto 20px; }
+.step-badge svg{ width:22px; height:22px; stroke:var(--sand); }
+.step-label{ font-size:1.0625rem; font-weight:500; color:var(--deep); font-family:var(--font-body); }
+[dir="rtl"] .step-label{ font-family:var(--font-ar); font-weight:600; }
+.step-value{ font-size:0.875rem; color:var(--ink); opacity:0.78; margin-top:8px; }
+.step-rule{ width:120px; height:1px; background:var(--ink); opacity:0.25; margin:16px auto 0; }
+
+/* ---------- why us ---------- */
+.why-grid{ display:grid; grid-template-columns:1fr; gap:0; max-width:980px; margin:0 auto; }
+@media(min-width:768px){ .why-grid{ grid-template-columns:1fr 1fr; column-gap:64px; } }
+.why-item{ display:flex; gap:20px; padding:28px 0; border-bottom:1px solid rgba(30,37,30,0.14); }
+.why-item svg{ width:26px; height:26px; stroke:var(--deep); flex:none; margin-top:4px; }
+.why-item h3{ font-size:1.125rem; color:var(--deep); margin-bottom:6px; }
+.why-item p{ font-size:0.9375rem; opacity:0.8; }
+
+/* ---------- CTA band ---------- */
+.cta-band{ text-align:center; }
+.cta-band .eyebrow{ color:var(--accent); display:block; margin-bottom:16px; }
+.cta-band h2{ color:var(--accent-pale); }
+.cta-band p{ color:var(--sand); opacity:0.82; max-width:44ch; margin:20px auto 0; }
+.cta-band .btn{ margin-top:44px; padding:20px 24px; width:100%; max-width:640px; justify-content:center; }
+.cta-points{ display:flex; flex-wrap:wrap; justify-content:center; gap:12px 28px; margin-top:36px; }
+.cta-points li{ display:flex; align-items:center; gap:10px; font-size:0.9375rem; opacity:0.85; }
+.cta-points svg{ width:16px; height:16px; stroke:var(--accent); flex:none; }
+
+/* ---------- FAQ ---------- */
+.faq-list{ max-width:820px; margin:0 auto; display:flex; flex-direction:column; gap:14px; }
+.faq-item{
+  background:rgba(255,255,255,0.45); -webkit-backdrop-filter:blur(16px) saturate(160%); backdrop-filter:blur(16px) saturate(160%);
+  border:1px solid rgba(255,255,255,0.6); box-shadow:inset 0 1px 0 rgba(255,255,255,0.7), 0 16px 40px rgba(0,0,0,0.05);
+  border-radius:var(--radius-card); overflow:hidden;
+}
+.faq-item:nth-child(even){ border-radius:var(--radius-card-alt); }
+.faq-q{ width:100%; display:flex; align-items:center; justify-content:space-between; gap:16px; padding:24px 28px; text-align:start; }
+.faq-q h3{ font-size:1.0625rem; }
+.faq-q .plus{ flex:none; width:22px; height:22px; position:relative; }
+.faq-q .plus::before, .faq-q .plus::after{ content:''; position:absolute; background:var(--deep); border-radius:2px; transition:transform 300ms ease, opacity 300ms ease; }
+.faq-q .plus::before{ width:16px; height:1.5px; top:50%; left:50%; transform:translate(-50%,-50%); }
+.faq-q .plus::after{ width:1.5px; height:16px; top:50%; left:50%; transform:translate(-50%,-50%); }
+.faq-item.open .plus::after{ transform:translate(-50%,-50%) rotate(90deg); opacity:0; }
+.faq-a{ max-height:0; overflow:hidden; transition:max-height 350ms var(--ease); }
+.faq-a p{ padding:0 28px 24px; opacity:0.8; font-size:0.9375rem; }
+
+/* ---------- contact ---------- */
+.contact-grid{ display:grid; grid-template-columns:1fr; gap:40px; }
+@media(min-width:900px){ .contact-grid{ grid-template-columns:1.1fr 1fr; gap:56px; align-items:stretch; } }
+.contact-form{
+  background:rgba(255,255,255,0.05); -webkit-backdrop-filter:blur(20px) saturate(160%); backdrop-filter:blur(20px) saturate(160%);
+  border:1px solid rgba(255,255,255,0.12); border-radius:var(--radius-b); padding:36px 24px;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.08);
+  display:grid; gap:18px;
+}
+@media(min-width:768px){ .contact-form{ padding:48px; grid-template-columns:1fr 1fr; } }
+.field{ display:flex; flex-direction:column; gap:8px; }
+.field.full{ grid-column:1 / -1; }
+.field label{ color:var(--accent); }
+.field input, .field select, .field textarea{
+  font:inherit; font-size:1rem; color:var(--sand); background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,255,255,0.18); border-radius:14px; padding:14px 16px; min-height:50px; width:100%;
+  transition:border-color 250ms ease, background 250ms ease;
+}
+.field select{ appearance:none; -webkit-appearance:none; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23B8B7B4' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E"); background-repeat:no-repeat; background-position:right 16px center; padding-inline-end:40px; }
+[dir="rtl"] .field select{ background-position:left 16px center; }
+.field select option{ color:#161618; }
+.field textarea{ min-height:120px; resize:vertical; }
+.field input::placeholder, .field textarea::placeholder{ color:rgba(231,230,228,0.5); }
+.field input:focus, .field select:focus, .field textarea:focus{ outline:none; border-color:var(--accent); background:rgba(255,255,255,0.07); }
+.form-note{ font-size:0.8125rem; opacity:0.65; grid-column:1 / -1; }
+.contact-form .btn{ grid-column:1 / -1; width:100%; }
+.contact-side{ display:flex; flex-direction:column; gap:24px; }
+.contact-lines{ display:flex; flex-direction:column; gap:16px; }
+.contact-lines a, .contact-lines div{ display:flex; align-items:center; gap:14px; font-size:0.9375rem; opacity:0.9; }
+.contact-lines a:hover{ color:var(--accent); }
+.contact-lines .ic{ width:44px; height:44px; border-radius:50%; border:1px solid rgba(255,255,255,0.18); display:flex; align-items:center; justify-content:center; flex:none; }
+.contact-lines svg{ width:18px; height:18px; stroke:var(--accent-pale); }
+.ltr{ direction:ltr; unicode-bidi:isolate; }
+.map-frame{ flex:1; min-height:280px; border-radius:var(--radius-img); overflow:hidden; border:1px solid rgba(255,255,255,0.12); background:var(--deep-soft); }
+.map-frame iframe{ width:100%; height:100%; min-height:280px; border:0; display:block; filter:grayscale(1) contrast(1.05) brightness(0.9); }
+
+/* ---------- footer ---------- */
+footer{ background:var(--sand); padding:80px 0 32px; }
+.footer-top{ display:flex; flex-direction:column; gap:40px; }
+@media(min-width:768px){ .footer-top{ flex-direction:row; justify-content:space-between; } }
+.footer-word img{ height:28px; width:auto; }
+@media(min-width:768px){ .footer-word img{ height:34px; } }
+.footer-blurb{ max-width:40ch; margin-top:18px; font-size:0.9375rem; opacity:0.8; }
+.footer-social{ display:flex; gap:16px; margin-top:20px; flex-wrap:wrap; }
+.footer-social a{
+  width:44px; height:44px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+  background:rgba(255,255,255,0.4); -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px);
+  border:1px solid rgba(20,20,22,0.18); transition:all 250ms ease;
+}
+.footer-social a:hover{ background:var(--deep); }
+.footer-social svg{ width:20px; height:20px; stroke:var(--deep); transition:stroke 250ms ease; }
+.footer-social a:hover svg{ stroke:var(--sand); }
+.footer-contact{ display:flex; flex-direction:column; gap:14px; }
+.footer-contact a, .footer-contact div{ display:flex; align-items:center; gap:12px; font-size:0.9375rem; opacity:0.85; }
+.footer-contact svg{ width:18px; height:18px; stroke:var(--deep); flex:none; }
+.footer-divider{ height:1px; background:var(--deep); opacity:0.15; margin:48px 0 24px; }
+.footer-bottom{ display:flex; flex-direction:column; gap:12px; text-align:center; padding-bottom:72px; }
+@media(min-width:768px){ .footer-bottom{ flex-direction:row; justify-content:space-between; text-align:start; padding-bottom:0; } }
+
+/* ---------- floating WhatsApp + floating CTA pill ---------- */
+.wa-float{
+  position:fixed; bottom:20px; inset-inline-end:16px; z-index:90;
+  width:56px; height:56px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+  background:rgba(20,20,22,0.88); -webkit-backdrop-filter:blur(14px); backdrop-filter:blur(14px);
+  border:1px solid rgba(255,255,255,0.16); color:var(--sand);
+  box-shadow:0 24px 60px rgba(0,0,0,0.10), inset 0 1px 0 rgba(255,255,255,0.12);
+  transition:transform 250ms ease;
+}
+.wa-float:hover{ transform:translateY(-3px); }
+.wa-float svg{ width:26px; height:26px; }
+@media(min-width:768px){ .wa-float{ bottom:28px; inset-inline-end:28px; } }
+.cta-float{
+  position:fixed; z-index:90; bottom:24px; left:50%; transform:translate(-50%, 20px);
+  max-width:calc(100vw - 176px); overflow:hidden; text-overflow:ellipsis;
+  padding:15px 22px; min-height:48px; border-radius:var(--radius-pill);
+  font-size:0.6875rem; letter-spacing:0.16em; text-transform:uppercase; font-weight:500;
+  display:inline-flex; align-items:center; justify-content:center; white-space:nowrap;
+  box-shadow:0 24px 60px rgba(0,0,0,0.10);
+  opacity:0; visibility:hidden; transition:opacity 300ms ease, transform 300ms ease, background 300ms ease, color 300ms ease, visibility 300ms;
+  background:var(--deep); color:var(--sand); border:1px solid rgba(255,255,255,0.12);
+}
+[dir="rtl"] .cta-float{ text-transform:none; letter-spacing:0; font-size:0.875rem; }
+.cta-float.show{ opacity:1; visibility:visible; transform:translate(-50%, 0); }
+.cta-float.on-dark{ background:var(--sand); color:var(--deep); border-color:rgba(0,0,0,0.08); }
+@media(min-width:768px){
+  .cta-float{ left:auto; right:100px; transform:translateY(20px); bottom:32px; max-width:none; padding:16px 28px; }
+  .cta-float.show{ transform:translateY(0); }
+  [dir="rtl"] .cta-float{ right:auto; left:100px; }
+}
+body.menu-locked .cta-float, body.menu-locked .wa-float{ opacity:0; visibility:hidden; }
+
+/* ---------- privacy dialog ---------- */
+#privacyOpen{ color:inherit; padding:12px 0; }
+#privacyOpen:hover{ opacity:0.7; }
+dialog#privacyDialog{
+  border:none; padding:0; margin:auto; width:min(640px, calc(100vw - 32px)); max-height:calc(100svh - 64px);
+  border-radius:var(--radius-a); background:var(--sand); color:var(--ink); box-shadow:0 24px 60px rgba(0,0,0,0.10);
+}
+dialog#privacyDialog::backdrop{ background:rgba(11,11,12,0.7); }
+.privacy-inner{ padding:48px 28px 36px; position:relative; }
+@media(min-width:768px){ .privacy-inner{ padding:56px 48px 44px; } }
+.privacy-inner h3{ color:var(--deep); font-size:1.5rem; margin-bottom:20px; }
+.privacy-inner p{ font-size:0.9375rem; opacity:0.85; margin-bottom:14px; }
+.privacy-close{ position:absolute; top:16px; inset-inline-end:16px; width:44px; height:44px; display:flex; align-items:center; justify-content:center; border-radius:50%; border:1px solid rgba(30,37,30,0.2); }
+.privacy-close svg{ width:18px; height:18px; }
+
+/* utility */
+.text-center{ text-align:center; }
+</style>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header id="siteHeader">
+  <div class="container">
+    <a href="#top" class="logo" aria-label="Cyber Xpert home">
+      <img src="logo.png" alt="Cyber Xpert" class="logo-img js-logo" width="640" height="81">
+    </a>
+    <nav class="nav-desktop" aria-label="Main">
+      <a href="#services" data-i18n="nav.services">Services</a>
+      <a href="#agents" data-i18n="nav.agents">AI Agents</a>
+      <a href="#industries" data-i18n="nav.industries">Industries</a>
+      <a href="#process" data-i18n="nav.process">Process</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+      <button class="lang-toggle" id="langToggleDesktop" type="button">العربية</button>
+    </nav>
+    <div class="header-right">
+      <button class="lang-toggle" id="langToggleMobile" type="button" aria-label="Switch language">AR</button>
+      <button class="hamburger" id="hamburgerBtn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="menuOverlay">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="menu-overlay" id="menuOverlay">
+  <a href="#services" data-i18n="nav.services">Services</a>
+  <a href="#agents" data-i18n="nav.agents">AI Agents</a>
+  <a href="#industries" data-i18n="nav.industries">Industries</a>
+  <a href="#process" data-i18n="nav.process">Process</a>
+  <a href="#faq" data-i18n="nav.faq">FAQ</a>
+  <a href="#contact" data-i18n="nav.contact">Contact</a>
+</div>
+
+<main id="top">
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="hero">
+  <div class="hero-pattern" aria-hidden="true"></div>
+  <svg class="hero-skyline" viewBox="0 0 1440 260" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <g fill="var(--deep)">
+      <rect x="0" y="180" width="60" height="80"/><rect x="70" y="150" width="50" height="110"/>
+      <rect x="130" y="190" width="70" height="70"/><rect x="210" y="130" width="45" height="130"/>
+      <rect x="265" y="170" width="60" height="90"/><rect x="335" y="110" width="40" height="150"/>
+      <rect x="385" y="160" width="55" height="100"/><rect x="450" y="140" width="48" height="120"/>
+      <rect x="505" y="185" width="65" height="75"/><rect x="575" y="155" width="40" height="105"/>
+      <rect x="600" y="200" width="170" height="60"/><rect x="620" y="140" width="130" height="60"/>
+      <rect x="645" y="90" width="80" height="50"/><rect x="668" y="45" width="38" height="45"/>
+      <rect x="683" y="5" width="10" height="40"/>
+      <rect x="780" y="170" width="55" height="90"/><rect x="845" y="140" width="42" height="120"/>
+      <rect x="895" y="185" width="60" height="75"/><rect x="965" y="120" width="48" height="140"/>
+      <rect x="1020" y="165" width="55" height="95"/><rect x="1085" y="145" width="40" height="115"/>
+      <rect x="1135" y="180" width="65" height="80"/><rect x="1210" y="110" width="45" height="150"/>
+      <rect x="1265" y="160" width="58" height="100"/><rect x="1335" y="140" width="50" height="120"/>
+      <rect x="1395" y="175" width="45" height="85"/>
+    </g>
+  </svg>
+  <div class="hero-inner">
+    <img src="logo.png" alt="Cyber Xpert" class="hero-logo js-logo" width="640" height="81">
+    <span class="tracked tagline" data-i18n="hero.tagline">AI &amp; App Development · UAE</span>
+    <h1 data-i18n="hero.h1">Intelligence,<br><span class="accent-txt">Engineered.</span></h1>
+    <p data-i18n="hero.sub">Cyber Xpert designs and builds AI agents, machine-learning systems and mobile apps for businesses in the UAE, from the first idea to launch and long after.</p>
+    <div class="hero-ctas">
+      <a href="#" class="btn btn-primary js-wa" data-wa-key="hero.cta1" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg>
+        <span data-i18n="hero.cta1">Free Consultation</span>
+      </a>
+      <a href="#services" class="btn btn-outline">
+        <span data-i18n="hero.cta2">Explore Services</span>
+        <svg class="dir-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STATS STRIP (numbers come from CONFIG.stats) ================= -->
+<div class="stats-strip">
+  <div class="container">
+    <div class="stats-grid" id="statsGrid">
+      <div class="reveal">
+        <div class="stat-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></svg></div>
+        <div class="stat-value"><span class="js-count">0</span><span class="js-suffix"></span></div>
+        <div class="stat-label js-stat-label"></div>
+      </div>
+      <div class="reveal">
+        <div class="stat-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <div class="stat-value"><span class="js-count">0</span><span class="js-suffix"></span></div>
+        <div class="stat-label js-stat-label"></div>
+      </div>
+      <div class="reveal">
+        <div class="stat-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div>
+        <div class="stat-value"><span class="js-count">0</span><span class="js-suffix"></span></div>
+        <div class="stat-label js-stat-label"></div>
+      </div>
+      <div class="reveal">
+        <div class="stat-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"/></svg></div>
+        <div class="stat-value"><span class="js-count">0</span><span class="js-suffix"></span></div>
+        <div class="stat-label js-stat-label"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CAPABILITIES (chips) ================= -->
+<section class="panel-sand" id="capabilities">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="caps.eyebrow">What We Build</span>
+      <h2 data-i18n="caps.h2">Smart Products,<br>End To End</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="chip-row reveal">
+      <div class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="7" width="14" height="12" rx="3"/><path d="M12 3v4M9 12h.01M15 12h.01M9.5 16h5"/></svg><span data-i18n="caps.c1">AI Agents</span></div>
+      <div class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg><span data-i18n="caps.c2">WhatsApp Automation</span></div>
+      <div class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg><span data-i18n="caps.c3">Instagram DM Agents</span></div>
+      <div class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><circle cx="12" cy="11" r="2"/><path d="M7.5 7.2l3 2.6M16.5 7.2l-3 2.6M12 13v3"/></svg><span data-i18n="caps.c4">Machine Learning</span></div>
+      <div class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M10.5 18.5h3"/></svg><span data-i18n="caps.c5">Mobile Apps</span></div>
+      <div class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M2 8h20M8 21h8"/></svg><span data-i18n="caps.c6">Websites &amp; Stores</span></div>
+      <div class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><span data-i18n="caps.c7">Data &amp; Analytics</span></div>
+      <div class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l1.6 5.5L19 9l-5.4 1.5L12 16l-1.6-5.5L5 9l5.4-1.5z"/><path d="M18 16l.6 2 2 .6-2 .6-.6 2-.6-2-2-.6 2-.6z"/></svg><span data-i18n="caps.c8">AI Consulting</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES (numbered cards — copy an <article> to add one) ================= -->
+<section class="panel-sand" id="services" style="padding-top:0;">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="svc.eyebrow">Core Services</span>
+      <h2 data-i18n="svc.h2">Four Ways We<br>Move You Forward</h2>
+      <p data-i18n="svc.p">One team for the AI, the app and the platform around it, so nothing gets lost between vendors.</p>
+      <div class="rule"></div>
+    </div>
+    <div class="diff-grid">
+      <article class="diff-card reveal">
+        <div class="diff-top"><span class="diff-num">01</span><svg class="ornament" viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 2l1.6 5.5L19 9l-5.4 1.5L12 16l-1.6-5.5L5 9l5.4-1.5z"/></svg></div>
+        <h3 data-i18n="svc.t1">AI Agents</h3>
+        <p data-i18n="svc.p1">Sales and support agents that live in WhatsApp and Instagram, answer in seconds and close orders while you sleep.</p>
+        <button class="more-toggle" type="button" aria-expanded="false"><span data-i18n="ui.more">View more</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="more">
+          <ul>
+            <li data-i18n="svc.t1a">Instagram DM, comment and story-reply automation</li>
+            <li data-i18n="svc.t1b">WhatsApp ordering, bookings and follow-ups</li>
+            <li data-i18n="svc.t1c">Payment links and courier hand-off built in</li>
+          </ul>
+          <a href="#" class="btn btn-primary-onDark js-wa" data-wa-key="svc.t1" target="_blank" rel="noopener"><span data-i18n="ui.ask">Ask on WhatsApp</span></a>
+        </div>
+      </article>
+      <article class="diff-card reveal">
+        <div class="diff-top"><span class="diff-num">02</span><svg class="ornament" viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 2l1.6 5.5L19 9l-5.4 1.5L12 16l-1.6-5.5L5 9l5.4-1.5z"/></svg></div>
+        <h3 data-i18n="svc.t2">AI &amp; Machine Learning</h3>
+        <p data-i18n="svc.p2">Custom models and automations that read your data, predict demand and take repetitive work off your team.</p>
+        <button class="more-toggle" type="button" aria-expanded="false"><span data-i18n="ui.more">View more</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="more">
+          <ul>
+            <li data-i18n="svc.t2a">Forecasting, scoring and recommendation models</li>
+            <li data-i18n="svc.t2b">Document reading and workflow automation</li>
+            <li data-i18n="svc.t2c">Private chat assistants trained on your knowledge</li>
+          </ul>
+          <a href="#" class="btn btn-primary-onDark js-wa" data-wa-key="svc.t2" target="_blank" rel="noopener"><span data-i18n="ui.ask">Ask on WhatsApp</span></a>
+        </div>
+      </article>
+      <article class="diff-card reveal">
+        <div class="diff-top"><span class="diff-num">03</span><svg class="ornament" viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 2l1.6 5.5L19 9l-5.4 1.5L12 16l-1.6-5.5L5 9l5.4-1.5z"/></svg></div>
+        <h3 data-i18n="svc.t3">Mobile App Development</h3>
+        <p data-i18n="svc.p3">Fast, scalable iOS and Android apps with the dashboards and back end to run them, shipped to both stores.</p>
+        <button class="more-toggle" type="button" aria-expanded="false"><span data-i18n="ui.more">View more</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="more">
+          <ul>
+            <li data-i18n="svc.t3a">Native and cross-platform builds</li>
+            <li data-i18n="svc.t3b">Admin dashboards, APIs and payments</li>
+            <li data-i18n="svc.t3c">App Store and Google Play publishing</li>
+          </ul>
+          <a href="#" class="btn btn-primary-onDark js-wa" data-wa-key="svc.t3" target="_blank" rel="noopener"><span data-i18n="ui.ask">Ask on WhatsApp</span></a>
+        </div>
+      </article>
+      <article class="diff-card reveal">
+        <div class="diff-top"><span class="diff-num">04</span><svg class="ornament" viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 2l1.6 5.5L19 9l-5.4 1.5L12 16l-1.6-5.5L5 9l5.4-1.5z"/></svg></div>
+        <h3 data-i18n="svc.t4">Websites &amp; E-Commerce</h3>
+        <p data-i18n="svc.p4">Bilingual websites and online stores that load fast, rank well and connect straight to your AI agent.</p>
+        <button class="more-toggle" type="button" aria-expanded="false"><span data-i18n="ui.more">View more</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="more">
+          <ul>
+            <li data-i18n="svc.t4a">Arabic and English, mobile-first</li>
+            <li data-i18n="svc.t4b">Shopify and custom stores</li>
+            <li data-i18n="svc.t4c">SEO set up from day one</li>
+          </ul>
+          <a href="#" class="btn btn-primary-onDark js-wa" data-wa-key="svc.t4" target="_blank" rel="noopener"><span data-i18n="ui.ask">Ask on WhatsApp</span></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AI AGENTS (dark panel active list) ================= -->
+<section class="panel-sand" id="agents" style="padding-top:0;">
+  <div class="container">
+    <div class="active-panel reveal">
+      <span class="active-ghost" aria-hidden="true">02</span>
+      <svg class="active-orn" viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><path d="M12 2l1.6 5.5L19 9l-5.4 1.5L12 16l-1.6-5.5L5 9l5.4-1.5z"/></svg>
+      <div class="section-head" style="margin-bottom:0;">
+        <span class="eyebrow" data-i18n="ag.eyebrow">Cyber Xpert AI Agents</span>
+        <h2 data-i18n="ag.h2" style="color:var(--accent-pale);">From First Message<br>To Delivered Order</h2>
+        <p data-i18n="ag.p">One agent covers the whole journey, working in Arabic and English on the channels your customers already use.</p>
+      </div>
+      <div class="active-grid">
+        <div class="active-rows" id="agentRows" role="tablist">
+          <button class="active-row active" type="button" role="tab" aria-selected="true" data-pane="0"><span data-i18n="ag.r1">Instagram DM Agent</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></button>
+          <button class="active-row" type="button" role="tab" aria-selected="false" data-pane="1"><span data-i18n="ag.r2">WhatsApp Automation</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></button>
+          <button class="active-row" type="button" role="tab" aria-selected="false" data-pane="2"><span data-i18n="ag.r3">Text &amp; Voice Replies</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></button>
+          <button class="active-row" type="button" role="tab" aria-selected="false" data-pane="3"><span data-i18n="ag.r4">Payment Links</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></button>
+          <button class="active-row" type="button" role="tab" aria-selected="false" data-pane="4"><span data-i18n="ag.r5">Delivery &amp; Analytics</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></button>
+        </div>
+        <div class="active-detail" id="agentDetail">
+          <div class="detail-pane active">
+            <h4 data-i18n="ag.d1t">Never miss a DM again</h4>
+            <p data-i18n="ag.d1p">The agent replies to direct messages, comments and story replies within seconds, on the official Instagram API. When a conversation needs a person, it hands over with the full history attached.</p>
+            <a href="#" class="btn btn-primary-onDark js-wa" data-wa-key="ag.r1" target="_blank" rel="noopener"><span data-i18n="ui.ask">Ask on WhatsApp</span></a>
+          </div>
+          <div class="detail-pane">
+            <h4 data-i18n="ag.d2t">Your busiest salesperson, on WhatsApp</h4>
+            <p data-i18n="ag.d2p">Built on the official WhatsApp Cloud API with buttons, lists and quick replies. It takes orders, books appointments and follows up, sharing one inbox with Instagram and email.</p>
+            <a href="#" class="btn btn-primary-onDark js-wa" data-wa-key="ag.r2" target="_blank" rel="noopener"><span data-i18n="ui.ask">Ask on WhatsApp</span></a>
+          </div>
+          <div class="detail-pane">
+            <h4 data-i18n="ag.d3t">Sounds like your brand</h4>
+            <p data-i18n="ag.d3p">Trained on your catalogue, prices, FAQs and policies, the agent answers in your tone by text or natural voice note. Confidence rules decide when it should pass a question to your team.</p>
+            <a href="#" class="btn btn-primary-onDark js-wa" data-wa-key="ag.r3" target="_blank" rel="noopener"><span data-i18n="ui.ask">Ask on WhatsApp</span></a>
+          </div>
+          <div class="detail-pane">
+            <h4 data-i18n="ag.d4t">Get paid inside the chat</h4>
+            <p data-i18n="ag.d4p">When a customer is ready, the agent creates a secure checkout link for the exact product and price, drops it in the conversation and tracks the payment against the order.</p>
+            <a href="#" class="btn btn-primary-onDark js-wa" data-wa-key="ag.r4" target="_blank" rel="noopener"><span data-i18n="ui.ask">Ask on WhatsApp</span></a>
+          </div>
+          <div class="detail-pane">
+            <h4 data-i18n="ag.d5t">Orders that ship themselves</h4>
+            <p data-i18n="ag.d5p">Paid orders go straight to your courier with the customer's name, address and items. A live dashboard shows replies, sales and campaign results, and connects to your CRM, calendar and store.</p>
+            <a href="#" class="btn btn-primary-onDark js-wa" data-wa-key="ag.r5" target="_blank" rel="noopener"><span data-i18n="ui.ask">Ask on WhatsApp</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INDUSTRIES (carousel — copy an <article class="ind-card"> to add one) ================= -->
+<section class="panel-deep" id="industries">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="ind.eyebrow">Industries</span>
+      <h2 data-i18n="ind.h2" style="color:var(--accent-pale);">Agents Ready For<br>Fourteen Sectors</h2>
+      <p data-i18n="ind.p">Each agent comes pre-trained for the questions your customers actually ask, then tuned to your business.</p>
+      <div class="rule"></div>
+    </div>
+
+    <div class="gallery-wrap reveal">
+      <div class="gallery-track" id="galleryTrack">
+        <article class="ind-card"><span class="ind-num">01</span><div class="ind-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6L5 3H2"/><circle cx="9" cy="20" r="1.2"/><circle cx="18" cy="20" r="1.2"/></svg></div><h3 data-i18n="ind.t1">E-Commerce Stores</h3><p data-i18n="ind.p1">Product questions, sizing, stock checks and checkout in the chat.</p><a href="#" class="ind-link js-wa" data-wa-key="ind.t1" target="_blank" rel="noopener"><span data-i18n="ui.askThis">Ask about this</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
+        <article class="ind-card"><span class="ind-num">02</span><div class="ind-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg></div><h3 data-i18n="ind.t2">Instagram Businesses</h3><p data-i18n="ind.p2">Turn comments and DMs into paid orders without hiring night shifts.</p><a href="#" class="ind-link js-wa" data-wa-key="ind.t2" target="_blank" rel="noopener"><span data-i18n="ui.askThis">Ask about this</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
+        <article class="ind-card"><span class="ind-num">03</span><div class="ind-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l1.5-5h15L21 9"/><path d="M3 9h18v2a3 3 0 0 1-6 0 3 3 0 0 1-6 0 3 3 0 0 1-6 0z"/><path d="M5 13v8h14v-8"/></svg></div><h3 data-i18n="ind.t3">Retail Stores</h3><p data-i18n="ind.p3">Opening hours, branch stock and promotions answered instantly.</p><a href="#" class="ind-link js-wa" data-wa-key="ind.t3" target="_blank" rel="noopener"><span data-i18n="ui.askThis">Ask about this</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
+        <article class="ind-card"><span class="ind-num">04</span><div class="ind-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v8a2 2 0 0 0 2 2v8M5 3v5a2 2 0 0 0 2 2M9 3v5a2 2 0 0 1-2 2"/><path d="M17 21V3c-2 1-3 4-3 7h3"/></svg></div><h3 data-i18n="ind.t4">Restaurants &amp; Cafés</h3><p data-i18n="ind.p4">Menus, table bookings and delivery orders handled around the clock.</p><a href="#" class="ind-link js-wa" data-wa-key="ind.t4" target="_blank" rel="noopener"><span data-i18n="ui.askThis">Ask about this</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
+        <article class="ind-card"><span class="ind-num">05</span><div class="ind-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg></div><h3 data-i18n="ind.t5">Real Estate</h3><p data-i18n="ind.p5">Qualify buyers and tenants, share listings and book viewings.</p><a href="#" class="ind-link js-wa" data-wa-key="ind.t5" target="_blank" rel="noopener"><span data-i18n="ui.askThis">Ask about this</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
+        <article class="ind-card"><span class="ind-num">06</span><div class="ind-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-7 9 7v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M9 14h6M9 17h6"/></svg></div><h3 data-i18n="ind.t6">Property Management</h3><p data-i18n="ind.p6">Maintenance requests, rent reminders and tenant questions logged automatically.</p><a href="#" class="ind-link js-wa" data-wa-key="ind.t6" target="_blank" rel="noopener"><span data-i18n="ui.askThis">Ask about this</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
+        <article class="ind-card"><span class="ind-num">07</span><div class="ind-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c4 4 6 7 6 10a6 6 0 0 1-12 0c0-3 2-6 6-10z"/><path d="M9.5 14.5a2.5 2.5 0 0 0 2.5 2.5"/></svg></div><h3 data-i18n="ind.t7">Cleaning Services</h3><p data-i18n="ind.p7">Instant quotes by home size and same-day slot booking.</p><a href="#" class="ind-link js-wa" data-wa-key="ind.t7" target="_blank" rel="noopener"><span data-i18n="ui.askThis">Ask about this</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
+        <article class="ind-card"><span class="ind-num">08</span><div class="ind-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13l1.6-4.5A2 2 0 0 1 6.5 7h11a2 2 0 0 1 1.9 1.5L21 13"/><rect x="2" y="13" width="20" height="5.5" rx="2"/><circle cx="7" cy="18.5" r="1.3"/><circle cx="17" cy="18.5" r="1.3"/></svg></div><h3 data-i18n="ind.t8">Car Rental</h3><p data-i18n="ind.p8">Availability, pricing and deposits confirmed before the customer calls.</p><a href="#" class="ind-link js-wa" data-wa-key="ind.t8" target="_blank" rel="noopener"><span data-i18n="ui.askThis">Ask about this</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
+        <article class="ind-card"><span class="ind-num">09</span><div class="ind-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/></svg></div><h3 data-i18n="ind.t9">Auto Parts Stores</h3><p data-i18n="ind.p9">Find the right part by make, model and year in a few messages.</p><a href="#" class="ind-link js-wa" data-wa-key="ind.t9" target="_blank" rel="noopener"><span data-i18n="ui.askThis">Ask about this</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
+        <article class="ind-card"><span class="ind-num">10</span><div class="ind-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg></div><h3 data-i18n="ind.t10">Schools</h3><p data-i18n="ind.p10">Admissions, fees and transport questions answered for every parent.</p><a href="#" class="ind-link js-wa" data-wa-key="ind.t10" target="_blank" rel="noopener"><span data-i18n="ui.askThis">Ask about this</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
+        <article class="ind-card"><span class="ind-num">11</span><div class="ind-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div><h3 data-i18n="ind.t11">Insurance</h3><p data-i18n="ind.p11">Quote requests, policy questions and claim updates without the queue.</p><a href="#" class="ind-link js-wa" data-wa-key="ind.t11" target="_blank" rel="noopener"><span data-i18n="ui.askThis">Ask about this</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
+        <article class="ind-card"><span class="ind-num">12</span><div class="ind-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4L8.1 15.9M14.5 14.5L20 20M8.1 8.1L12 12"/></svg></div><h3 data-i18n="ind.t12">Beauty Salons</h3><p data-i18n="ind.p12">Appointment booking, reminders and stylist availability on autopilot.</p><a href="#" class="ind-link js-wa" data-wa-key="ind.t12" target="_blank" rel="noopener"><span data-i18n="ui.askThis">Ask about this</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
+        <article class="ind-card"><span class="ind-num">13</span><div class="ind-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h12a4 4 0 0 1 4 4v12H8a4 4 0 0 1-4-4z"/><path d="M8 9h8M8 13h5"/></svg></div><h3 data-i18n="ind.t13">Training Centres</h3><p data-i18n="ind.p13">Course schedules, enrolment and payment in one conversation.</p><a href="#" class="ind-link js-wa" data-wa-key="ind.t13" target="_blank" rel="noopener"><span data-i18n="ui.askThis">Ask about this</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
+        <article class="ind-card"><span class="ind-num">14</span><div class="ind-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="8" r="3.5"/><path d="M3 20v-1a7 7 0 0 1 11-5.7"/><path d="M16 19l2 2 4-4"/></svg></div><h3 data-i18n="ind.t14">HR &amp; Recruitment</h3><p data-i18n="ind.p14">Screen applicants, collect CVs and schedule interviews automatically.</p><a href="#" class="ind-link js-wa" data-wa-key="ind.t14" target="_blank" rel="noopener"><span data-i18n="ui.askThis">Ask about this</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
+      </div>
+      <div class="gallery-arrows">
+        <button class="g-arrow" id="galleryPrev" type="button" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <button class="g-arrow" id="galleryNext" type="button" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROCESS ================= -->
+<section class="panel-sand" id="process">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="how.eyebrow">How We Work</span>
+      <h2 data-i18n="how.h2">Four Steps From<br>Idea To Launch</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="steps-grid">
+      <div class="reveal">
+        <div class="step-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.5-4.5"/></svg></div>
+        <div class="step-label" data-i18n="how.s1t">Discover</div>
+        <div class="step-value" data-i18n="how.s1p">A free 30-minute call to understand your goals and data.</div>
+        <div class="step-rule"></div>
+      </div>
+      <div class="reveal">
+        <div class="step-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg></div>
+        <div class="step-label" data-i18n="how.s2t">Design</div>
+        <div class="step-value" data-i18n="how.s2p">A clear spec, timeline and prototype you can click through.</div>
+        <div class="step-rule"></div>
+      </div>
+      <div class="reveal">
+        <div class="step-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6l-6 6 6 6M16 6l6 6-6 6"/></svg></div>
+        <div class="step-label" data-i18n="how.s3t">Build</div>
+        <div class="step-value" data-i18n="how.s3p">Weekly demos so you see real progress, not status reports.</div>
+        <div class="step-rule"></div>
+      </div>
+      <div class="reveal">
+        <div class="step-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 15c-1.5 1.5-2 5-2 5s3.5-.5 5-2"/><path d="M9 15l-3-3c1-4 4.5-8.5 12-9-.5 7.5-5 11-9 12z"/><circle cx="15" cy="9" r="1.5"/></svg></div>
+        <div class="step-label" data-i18n="how.s4t">Launch &amp; Support</div>
+        <div class="step-value" data-i18n="how.s4p">Go live, then monitoring, retraining and updates around the clock.</div>
+        <div class="step-rule"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY CYBER XPERT ================= -->
+<section class="panel-sand" id="why" style="padding-top:0;">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="why.eyebrow">Why Cyber Xpert</span>
+      <h2 data-i18n="why.h2">A Partner,<br>Not A Vendor</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="why-grid">
+      <div class="why-item reveal"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2 20v-1a7 7 0 0 1 14 0v1"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M22 20v-1a7 7 0 0 0-4-6.3"/></svg><div><h3 data-i18n="why.t1">Specialist engineers</h3><p data-i18n="why.p1">The people on your first call are the people who build your product.</p></div></div>
+      <div class="why-item reveal"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l1.6 5.5L19 9l-5.4 1.5L12 16l-1.6-5.5L5 9l5.4-1.5z"/></svg><div><h3 data-i18n="why.t2">Latest models, your choice</h3><p data-i18n="why.p2">We work with the leading AI models and pick the right one for cost, speed and accuracy.</p></div></div>
+      <div class="why-item reveal"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16M4 12h16M4 19h10"/></svg><div><h3 data-i18n="why.t3">Arabic-first thinking</h3><p data-i18n="why.p3">Every product we ship reads, writes and feels natural in Arabic and English.</p></div></div>
+      <div class="why-item reveal"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/></svg><div><h3 data-i18n="why.t4">Your data stays yours</h3><p data-i18n="why.p4">Clear ownership, secure hosting and no training on your data without consent.</p></div></div>
+      <div class="why-item reveal"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><h3 data-i18n="why.t5">Support that never sleeps</h3><p data-i18n="why.p5">Monitoring and optimisation continue long after launch day.</p></div></div>
+      <div class="why-item reveal"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg><div><h3 data-i18n="why.t6">Built to grow</h3><p data-i18n="why.p6">Start with one agent or one app, then scale without starting over.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA BAND ================= -->
+<section class="panel-deep cta-band">
+  <div class="container">
+    <span class="eyebrow" data-i18n="cta.eyebrow">Free Consultation</span>
+    <h2 data-i18n="cta.h2">Thirty Minutes<br>That Change Things</h2>
+    <p data-i18n="cta.p">Book a free session with a senior engineer. No obligation, just a clear plan.</p>
+    <ul class="cta-points">
+      <li><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="cta.b1">How we would build it</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="cta.b2">Answers to your questions</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="cta.b3">A first draft of your spec</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="cta.b4">An honest first estimate</span></li>
+    </ul>
+    <a href="#" class="btn btn-primary-onDark js-wa" data-wa-key="cta.btn" target="_blank" rel="noopener">
+      <span data-i18n="cta.btn">Book My Free Session</span>
+    </a>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="panel-sand" id="faq">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="faq.eyebrow">Questions</span>
+      <h2 data-i18n="faq.h2">Frequently Asked</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="faq-list reveal" id="faqList">
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false"><h3 data-i18n="faq.q1">What does an AI agent actually do for my business?</h3><span class="plus"></span></button>
+        <div class="faq-a"><p data-i18n="faq.a1">It answers customer messages on WhatsApp and Instagram around the clock, qualifies leads, books appointments, sends payment links and passes confirmed orders to your team or courier, in Arabic and English.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false"><h3 data-i18n="faq.q2">How long does it take to launch?</h3><span class="plus"></span></button>
+        <div class="faq-a"><p data-i18n="faq.a2">A ready-made AI agent can be live within days. Custom AI systems and mobile apps usually take one to four months depending on scope; you get a clear timeline after the free consultation.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false"><h3 data-i18n="faq.q3">Do you build both iOS and Android apps?</h3><span class="plus"></span></button>
+        <div class="faq-a"><p data-i18n="faq.a3">Yes. We build native and cross-platform apps for iOS and Android, plus the admin dashboards and back-end systems behind them, and we handle App Store and Google Play publishing.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false"><h3 data-i18n="faq.q4">Will the AI speak Arabic?</h3><span class="plus"></span></button>
+        <div class="faq-a"><p data-i18n="faq.a4">Yes. Every agent we deliver works in Arabic and English and is trained on your own products, prices and policies so its answers stay on-brand.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false"><h3 data-i18n="faq.q5">What happens after launch?</h3><span class="plus"></span></button>
+        <div class="faq-a"><p data-i18n="faq.a5">We stay on. Monitoring, updates, retraining and new features are covered by an ongoing support plan, with a direct line to the engineers who built your product.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT (form opens WhatsApp; map from CONFIG.mapQuery) ================= -->
+<section class="panel-deep" id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="contact.eyebrow">Let's Talk</span>
+      <h2 data-i18n="contact.h2" style="color:var(--accent-pale);">Tell Us What<br>You Want To Build</h2>
+      <p data-i18n="contact.p">Send a few lines and we will reply within one business day.</p>
+      <div class="rule"></div>
+    </div>
+    <div class="contact-grid">
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="field">
+          <label for="cfName" data-i18n="form.name">Full name</label>
+          <input id="cfName" name="name" type="text" autocomplete="name" required data-i18n-ph="form.namePh" placeholder="Your name">
+        </div>
+        <div class="field">
+          <label for="cfPhone" data-i18n="form.phone">Phone</label>
+          <input id="cfPhone" name="phone" type="tel" autocomplete="tel" inputmode="tel" data-i18n-ph="form.phonePh" placeholder="+971">
+        </div>
+        <div class="field full">
+          <label for="cfService" data-i18n="form.service">Service</label>
+          <select id="cfService" name="service">
+            <option data-i18n="svc.t1">AI Agents</option>
+            <option data-i18n="svc.t2">AI &amp; Machine Learning</option>
+            <option data-i18n="svc.t3">Mobile App Development</option>
+            <option data-i18n="svc.t4">Websites &amp; E-Commerce</option>
+            <option data-i18n="form.other">Something else</option>
+          </select>
+        </div>
+        <div class="field full">
+          <label for="cfMsg" data-i18n="form.msg">Project details</label>
+          <textarea id="cfMsg" name="message" required data-i18n-ph="form.msgPh" placeholder="A few lines about your idea, timeline and budget"></textarea>
+        </div>
+        <p class="form-note" data-i18n="form.note">Sending opens WhatsApp with your message ready to go.</p>
+        <button class="btn btn-primary-onDark" type="submit">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg>
+          <span data-i18n="form.send">Send Via WhatsApp</span>
+        </button>
+      </form>
+      <div class="contact-side reveal">
+        <div class="contact-lines">
+          <a class="js-phone" href="#"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1.1.4 2.2.7 3.2a2 2 0 0 1-.5 2.1L8 10.3a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c1 .4 2.1.6 3.2.7a2 2 0 0 1 1.7 2z"/></svg></span><span class="ltr js-phone-txt"></span></a>
+          <a class="js-wa" data-wa-key="" href="#" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg></span><span data-i18n="contact.wa">WhatsApp us</span></a>
+          <a class="js-email" href="#"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><span class="ltr js-email-txt"></span></a>
+          <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><span class="js-hours"></span></div>
+          <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span><span class="js-address"></span></div>
+        </div>
+        <div class="map-frame"><iframe id="mapFrame" title="Cyber Xpert location map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-word"><img src="logo.png" alt="Cyber Xpert" class="js-logo" width="640" height="81" loading="lazy"></div>
+        <p class="footer-blurb" data-i18n="footer.blurb">A UAE company building AI agents, intelligent systems and mobile apps that help businesses grow with confidence.</p>
+        <div class="footer-social" id="footerSocial">
+          <a data-social="instagram" href="#" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg></a>
+          <a data-social="linkedin" href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7 10v7M7 7h.01M11 17v-4a2 2 0 0 1 4 0v4M11 10v7"/></svg></a>
+          <a data-social="x" href="#" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l16 16M20 4L4 20"/></svg></a>
+          <a data-social="facebook" href="#" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9h3V5h-3a4 4 0 0 0-4 4v2H7v4h3v6h4v-6h3l1-4h-4V9a1 1 0 0 1 1-1z"/></svg></a>
+          <a data-social="tiktok" href="#" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.3 2.5 2 4.3 4.5 4.6"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-contact">
+        <a class="js-phone" href="#"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1.1.4 2.2.7 3.2a2 2 0 0 1-.5 2.1L8 10.3a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c1 .4 2.1.6 3.2.7a2 2 0 0 1 1.7 2z"/></svg><span class="ltr js-phone-txt"></span></a>
+        <a class="js-email" href="#"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span class="ltr js-email-txt"></span></a>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span class="js-address"></span></div>
+      </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-bottom">
+      <span class="caption">© <span class="js-year">2026</span> <span class="js-name">Cyber Xpert</span>. <span data-i18n="footer.rights">All rights reserved.</span></span>
+      <button type="button" class="caption" id="privacyOpen" data-i18n="footer.privacy">Privacy Policy</button>
+    </div>
+  </div>
+</footer>
+
+</main>
+
+<!-- ================= PRIVACY NOTICE ================= -->
+<dialog id="privacyDialog" aria-labelledby="privacyTitle">
+  <div class="privacy-inner">
+    <button type="button" class="privacy-close" id="privacyClose" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <h3 id="privacyTitle" data-i18n="privacy.h">Privacy Policy</h3>
+    <p data-i18n="privacy.p1">We only collect what you choose to send us: your name, phone, email and project details when you contact us, plus basic anonymous usage data to improve this website.</p>
+    <p data-i18n="privacy.p2">We use it to reply to you, prepare proposals and deliver the services you request. We never sell or rent your personal data, and share it only with providers that help us run our business, or when the law requires it.</p>
+    <p data-i18n="privacy.p3">This site remembers your language choice in your browser. You can ask us at any time to see, correct or delete the data we hold about you using the contact details on this page.</p>
+  </div>
+</dialog>
+
+<!-- floating buttons -->
+<a href="#" class="cta-float js-wa" id="ctaFloat" data-wa-key="hero.cta1" target="_blank" rel="noopener"><span data-i18n="float.cta">Free Consultation</span></a>
+<a href="#" class="wa-float js-wa" data-wa-key="" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 .8a4 4 0 0 1-1.8-1.8l.8-1-1-2z"/></svg>
+</a>
+
+<script>
+/* ============================================================================
+   I18N — ARABIC DICTIONARY  |  قاموس الترجمة العربية
+   ----------------------------------------------------------------------
+   EN: All Arabic text lives here, keyed to the data-i18n names on the page.
+   AR: كل النصوص العربية هنا في مكان واحد. عدّل أي نص عربي وسيظهر فوراً.
+============================================================================ */
+const I18N_AR = {
+  "nav.services": "الخدمات",
+  "nav.agents": "وكلاء الذكاء الاصطناعي",
+  "nav.industries": "القطاعات",
+  "nav.process": "طريقة العمل",
+  "nav.faq": "الأسئلة الشائعة",
+  "nav.contact": "تواصل معنا",
+
+  "hero.tagline": "تطوير الذكاء الاصطناعي والتطبيقات · الإمارات",
+  "hero.h1": "ذكاءٌ اصطناعي<br><span class=\"accent-txt\">بهندسة دقيقة.</span>",
+  "hero.sub": "تصمم سايبر إكسبرت وتبني وكلاء الذكاء الاصطناعي وأنظمة تعلّم الآلة وتطبيقات الجوال للشركات في الإمارات، من الفكرة الأولى حتى الإطلاق وما بعده.",
+  "hero.cta1": "استشارة مجانية",
+  "hero.cta2": "استكشف خدماتنا",
+
+  "caps.eyebrow": "ماذا نبني",
+  "caps.h2": "منتجات ذكية،<br>من البداية للنهاية",
+  "caps.c1": "وكلاء الذكاء الاصطناعي",
+  "caps.c2": "أتمتة واتساب",
+  "caps.c3": "وكلاء رسائل انستقرام",
+  "caps.c4": "تعلّم الآلة",
+  "caps.c5": "تطبيقات الجوال",
+  "caps.c6": "مواقع ومتاجر إلكترونية",
+  "caps.c7": "البيانات والتحليلات",
+  "caps.c8": "استشارات الذكاء الاصطناعي",
+
+  "svc.eyebrow": "خدماتنا الأساسية",
+  "svc.h2": "أربع طرق<br>ننقلك بها للأمام",
+  "svc.p": "فريق واحد للذكاء الاصطناعي والتطبيق والمنصة المحيطة بهما، فلا يضيع شيء بين الموردين.",
+  "svc.t1": "وكلاء الذكاء الاصطناعي",
+  "svc.p1": "وكلاء مبيعات ودعم يعملون داخل واتساب وانستقرام، يردّون خلال ثوانٍ ويغلقون الطلبات وأنت نائم.",
+  "svc.t1a": "أتمتة رسائل انستقرام والتعليقات والردود على القصص",
+  "svc.t1b": "الطلبات والحجوزات والمتابعة عبر واتساب",
+  "svc.t1c": "روابط الدفع وتسليم الطلب لشركة التوصيل مدمجة",
+  "svc.t2": "الذكاء الاصطناعي وتعلّم الآلة",
+  "svc.p2": "نماذج وأتمتة مخصصة تقرأ بياناتك وتتوقع الطلب وتُخفف الأعمال المتكررة عن فريقك.",
+  "svc.t2a": "نماذج التنبؤ والتقييم والتوصيات",
+  "svc.t2b": "قراءة المستندات وأتمتة سير العمل",
+  "svc.t2c": "مساعدات محادثة خاصة مدرّبة على معرفة شركتك",
+  "svc.t3": "تطوير تطبيقات الجوال",
+  "svc.p3": "تطبيقات iOS وأندرويد سريعة وقابلة للتوسع، مع لوحات التحكم والأنظمة الخلفية اللازمة لتشغيلها، ونُطلقها على المتجرين.",
+  "svc.t3a": "تطوير أصلي ومتعدد المنصات",
+  "svc.t3b": "لوحات تحكم وواجهات برمجية ومدفوعات",
+  "svc.t3c": "النشر على آب ستور وجوجل بلاي",
+  "svc.t4": "المواقع والمتاجر الإلكترونية",
+  "svc.p4": "مواقع ومتاجر ثنائية اللغة سريعة التحميل، تتصدر نتائج البحث وتتصل مباشرة بوكيلك الذكي.",
+  "svc.t4a": "عربي وإنجليزي، بتصميم يبدأ من الجوال",
+  "svc.t4b": "متاجر Shopify ومتاجر مخصصة",
+  "svc.t4c": "تهيئة لمحركات البحث من اليوم الأول",
+
+  "ui.more": "اعرف المزيد",
+  "ui.ask": "اسألنا عبر واتساب",
+  "ui.askThis": "اسأل عن هذا",
+
+  "ag.eyebrow": "وكلاء سايبر إكسبرت الأذكياء",
+  "ag.h2": "من أول رسالة<br>حتى تسليم الطلب",
+  "ag.p": "وكيل واحد يغطي الرحلة كاملة، بالعربية والإنجليزية، على القنوات التي يستخدمها عملاؤك أصلاً.",
+  "ag.r1": "وكيل رسائل انستقرام",
+  "ag.r2": "أتمتة واتساب",
+  "ag.r3": "ردود نصية وصوتية",
+  "ag.r4": "روابط الدفع",
+  "ag.r5": "التوصيل والتحليلات",
+  "ag.d1t": "لن تفوتك رسالة بعد اليوم",
+  "ag.d1p": "يرد الوكيل على الرسائل المباشرة والتعليقات والردود على القصص خلال ثوانٍ عبر واجهة انستقرام الرسمية، وعندما تحتاج المحادثة إلى موظف يحوّلها إليه مع سجلها الكامل.",
+  "ag.d2t": "أنشط موظف مبيعات لديك، على واتساب",
+  "ag.d2p": "مبني على واجهة WhatsApp Cloud الرسمية مع الأزرار والقوائم والردود السريعة. يستقبل الطلبات ويحجز المواعيد ويتابع العملاء، في صندوق وارد واحد مع انستقرام والبريد.",
+  "ag.d3t": "يتحدث بلسان علامتك التجارية",
+  "ag.d3p": "مدرّب على منتجاتك وأسعارك وأسئلتك الشائعة وسياساتك، فيجيب بأسلوبك نصاً أو برسالة صوتية طبيعية، وتحدد قواعد الثقة متى يحوّل السؤال إلى فريقك.",
+  "ag.d4t": "استلم الدفع داخل المحادثة",
+  "ag.d4p": "عندما يكون العميل جاهزاً، ينشئ الوكيل رابط دفع آمن للمنتج والسعر بدقة، ويرسله في المحادثة ويتابع الدفع مع الطلب.",
+  "ag.d5t": "طلبات تُشحن من تلقاء نفسها",
+  "ag.d5p": "تذهب الطلبات المدفوعة مباشرة إلى شركة التوصيل مع اسم العميل وعنوانه والمنتجات، ولوحة مباشرة تعرض الردود والمبيعات ونتائج الحملات وتتصل بنظام العملاء والتقويم والمتجر.",
+
+  "ind.eyebrow": "القطاعات",
+  "ind.h2": "وكلاء جاهزون<br>لأربعة عشر قطاعاً",
+  "ind.p": "كل وكيل مدرّب مسبقاً على الأسئلة التي يطرحها عملاؤك فعلاً، ثم نضبطه على تفاصيل عملك.",
+  "ind.t1": "المتاجر الإلكترونية",
+  "ind.p1": "أسئلة المنتجات والمقاسات والتوفر وإتمام الشراء داخل المحادثة.",
+  "ind.t2": "أعمال انستقرام",
+  "ind.p2": "حوّل التعليقات والرسائل إلى طلبات مدفوعة دون مناوبات ليلية.",
+  "ind.t3": "متاجر التجزئة",
+  "ind.p3": "ساعات العمل وتوفر المنتجات في الفروع والعروض، بإجابة فورية.",
+  "ind.t4": "المطاعم والمقاهي",
+  "ind.p4": "القوائم وحجز الطاولات وطلبات التوصيل على مدار الساعة.",
+  "ind.t5": "العقارات",
+  "ind.p5": "تأهيل المشترين والمستأجرين ومشاركة العقارات وحجز المعاينات.",
+  "ind.t6": "إدارة العقارات",
+  "ind.p6": "طلبات الصيانة وتذكير الإيجار وأسئلة المستأجرين تُسجَّل تلقائياً.",
+  "ind.t7": "خدمات التنظيف",
+  "ind.p7": "عروض أسعار فورية حسب حجم المنزل وحجز في نفس اليوم.",
+  "ind.t8": "تأجير السيارات",
+  "ind.p8": "التوفر والأسعار والتأمين مؤكدة قبل أن يتصل العميل.",
+  "ind.t9": "متاجر قطع غيار السيارات",
+  "ind.p9": "القطعة الصحيحة حسب الشركة والطراز والسنة في رسائل قليلة.",
+  "ind.t10": "المدارس",
+  "ind.p10": "أسئلة القبول والرسوم والمواصلات مجابة لكل ولي أمر.",
+  "ind.t11": "التأمين",
+  "ind.p11": "طلبات عروض الأسعار وأسئلة الوثائق وتحديثات المطالبات دون انتظار.",
+  "ind.t12": "صالونات التجميل",
+  "ind.p12": "حجز المواعيد والتذكير وتوفر الأخصائيات بشكل تلقائي.",
+  "ind.t13": "مراكز التدريب",
+  "ind.p13": "جداول الدورات والتسجيل والدفع في محادثة واحدة.",
+  "ind.t14": "الموارد البشرية والتوظيف",
+  "ind.p14": "فرز المتقدمين وجمع السير الذاتية وجدولة المقابلات تلقائياً.",
+
+  "how.eyebrow": "طريقة عملنا",
+  "how.h2": "أربع خطوات<br>من الفكرة للإطلاق",
+  "how.s1t": "الاكتشاف",
+  "how.s1p": "مكالمة مجانية مدتها 30 دقيقة لفهم أهدافك وبياناتك.",
+  "how.s2t": "التصميم",
+  "how.s2p": "مواصفات واضحة وجدول زمني ونموذج أولي قابل للتجربة.",
+  "how.s3t": "التطوير",
+  "how.s3p": "عروض أسبوعية لترى تقدماً حقيقياً لا مجرد تقارير.",
+  "how.s4t": "الإطلاق والدعم",
+  "how.s4p": "الإطلاق ثم المراقبة وإعادة التدريب والتحديثات على مدار الساعة.",
+
+  "why.eyebrow": "لماذا سايبر إكسبرت",
+  "why.h2": "شريك نجاح،<br>لا مجرد مورّد",
+  "why.t1": "مهندسون متخصصون",
+  "why.p1": "من تتحدث معهم في أول مكالمة هم من يبنون منتجك.",
+  "why.t2": "أحدث النماذج، باختيارك",
+  "why.p2": "نعمل مع أبرز نماذج الذكاء الاصطناعي ونختار الأنسب من حيث التكلفة والسرعة والدقة.",
+  "why.t3": "العربية أولاً",
+  "why.p3": "كل منتج نطلقه يقرأ ويكتب ويبدو طبيعياً بالعربية والإنجليزية.",
+  "why.t4": "بياناتك ملكك",
+  "why.p4": "ملكية واضحة واستضافة آمنة، ولا تدريب على بياناتك دون موافقتك.",
+  "why.t5": "دعم لا ينام",
+  "why.p5": "المراقبة والتحسين مستمران بعد يوم الإطلاق بوقت طويل.",
+  "why.t6": "مصمم للنمو",
+  "why.p6": "ابدأ بوكيل واحد أو تطبيق واحد، ثم توسّع دون أن تبدأ من جديد.",
+
+  "cta.eyebrow": "استشارة مجانية",
+  "cta.h2": "ثلاثون دقيقة<br>تصنع الفرق",
+  "cta.p": "احجز جلسة مجانية مع مهندس خبير. دون أي التزام، فقط خطة واضحة.",
+  "cta.b1": "كيف سنبني مشروعك",
+  "cta.b2": "إجابات على أسئلتك",
+  "cta.b3": "مسودة أولى للمواصفات",
+  "cta.b4": "تقدير أولي صادق",
+  "cta.btn": "احجز جلستي المجانية",
+
+  "faq.eyebrow": "أسئلة",
+  "faq.h2": "الأسئلة الشائعة",
+  "faq.q1": "ماذا يفعل وكيل الذكاء الاصطناعي لعملي فعلياً؟",
+  "faq.a1": "يرد على رسائل عملائك في واتساب وانستقرام على مدار الساعة، ويؤهل العملاء المحتملين، ويحجز المواعيد، ويرسل روابط الدفع، ويحوّل الطلبات المؤكدة إلى فريقك أو شركة التوصيل، بالعربية والإنجليزية.",
+  "faq.q2": "كم يستغرق الإطلاق؟",
+  "faq.a2": "يمكن تشغيل وكيل جاهز خلال أيام. أما أنظمة الذكاء الاصطناعي المخصصة وتطبيقات الجوال فتستغرق عادة من شهر إلى أربعة أشهر حسب النطاق، وتحصل على جدول زمني واضح بعد الاستشارة المجانية.",
+  "faq.q3": "هل تطورون تطبيقات iOS وأندرويد معاً؟",
+  "faq.a3": "نعم. نطور تطبيقات أصلية ومتعددة المنصات لـ iOS وأندرويد، مع لوحات التحكم والأنظمة الخلفية، ونتولى النشر على آب ستور وجوجل بلاي.",
+  "faq.q4": "هل يتحدث الذكاء الاصطناعي العربية؟",
+  "faq.a4": "نعم. كل وكيل نسلّمه يعمل بالعربية والإنجليزية، ومدرّب على منتجاتك وأسعارك وسياساتك لتبقى إجاباته متوافقة مع علامتك.",
+  "faq.q5": "ماذا يحدث بعد الإطلاق؟",
+  "faq.a5": "نبقى معك. المراقبة والتحديثات وإعادة التدريب والميزات الجديدة مشمولة بخطة دعم مستمرة، مع تواصل مباشر مع المهندسين الذين بنوا منتجك.",
+
+  "contact.eyebrow": "لنتحدث",
+  "contact.h2": "أخبرنا ماذا<br>تريد أن تبني",
+  "contact.p": "أرسل لنا بضعة أسطر وسنرد عليك خلال يوم عمل واحد.",
+  "contact.wa": "راسلنا على واتساب",
+  "form.name": "الاسم الكامل",
+  "form.namePh": "اسمك",
+  "form.phone": "رقم الهاتف",
+  "form.phonePh": "+971",
+  "form.service": "الخدمة",
+  "form.other": "شيء آخر",
+  "form.msg": "تفاصيل المشروع",
+  "form.msgPh": "بضعة أسطر عن فكرتك والجدول الزمني والميزانية",
+  "form.note": "عند الإرسال يُفتح واتساب ورسالتك جاهزة.",
+  "form.send": "أرسل عبر واتساب",
+  "form.error": "يرجى كتابة اسمك وتفاصيل المشروع.",
+
+  "footer.blurb": "شركة إماراتية تبني وكلاء الذكاء الاصطناعي والأنظمة الذكية وتطبيقات الجوال لتساعد الشركات على النمو بثقة.",
+  "footer.rights": "جميع الحقوق محفوظة.",
+  "footer.privacy": "سياسة الخصوصية",
+  "privacy.h": "سياسة الخصوصية",
+  "privacy.p1": "نجمع فقط ما تختار إرساله إلينا: اسمك وهاتفك وبريدك وتفاصيل مشروعك عند التواصل معنا، إضافة إلى بيانات استخدام أساسية مجهولة الهوية لتحسين هذا الموقع.",
+  "privacy.p2": "نستخدمها للرد عليك وإعداد العروض وتقديم الخدمات التي تطلبها. لا نبيع بياناتك الشخصية ولا نؤجرها أبداً، ولا نشاركها إلا مع مزودي خدمات يساعدوننا في إدارة أعمالنا، أو عندما يتطلب القانون ذلك.",
+  "privacy.p3": "يتذكر هذا الموقع اختيارك للغة داخل متصفحك. يمكنك أن تطلب منا في أي وقت الاطلاع على بياناتك أو تصحيحها أو حذفها عبر وسائل التواصل في هذه الصفحة.",
+  "float.cta": "استشارة مجانية"
+};
+
+/* English-only strings used by scripts (Arabic is in I18N_AR) */
+const UI_EN = { "form.error": "Please add your name and a few project details." };
+
+/* ============================================================================
+   APP — language, CONFIG wiring, interactions (no need to edit below)
+============================================================================ */
+(function(){
+  const STORAGE_KEY = 'cyberxpert_lang';
+  const $  = (s, r=document) => r.querySelector(s);
+  const $$ = (s, r=document) => Array.from(r.querySelectorAll(s));
+  const html = document.documentElement;
+  const isAr = () => html.getAttribute('lang') === 'ar';
+  const store = {
+    get(){ try{ return localStorage.getItem(STORAGE_KEY); }catch(e){ return null; } },
+    set(v){ try{ localStorage.setItem(STORAGE_KEY, v); }catch(e){} }
+  };
+
+  /* --- remember the English text that lives in the HTML --- */
+  const EN = {}, EN_PH = {};
+  $$('[data-i18n]').forEach(el => { const k = el.dataset.i18n; if(!(k in EN)) EN[k] = el.innerHTML; });
+  $$('[data-i18n-ph]').forEach(el => { EN_PH[el.dataset.i18nPh] = el.getAttribute('placeholder'); });
+  const t = key => (isAr() && I18N_AR[key] !== undefined) ? I18N_AR[key] : (EN[key] !== undefined ? EN[key] : (UI_EN[key] || key));
+  const plain = s => { const d = document.createElement('div'); d.innerHTML = s; return d.textContent.trim(); };
+
+  /* --- WhatsApp links (pre-filled with the tapped item's name) --- */
+  function waUrl(itemKey){
+    const ar = isAr();
+    let msg;
+    if(itemKey){
+      const tpl = ar ? CONFIG.whatsappItemMessageAr : CONFIG.whatsappItemMessage;
+      msg = tpl.replace('{item}', plain(t(itemKey)));
+    } else {
+      msg = ar ? CONFIG.whatsappMessageAr : CONFIG.whatsappMessage;
+    }
+    return 'https://wa.me/' + CONFIG.whatsapp + '?text=' + encodeURIComponent(msg);
+  }
+  function refreshWa(){ $$('.js-wa').forEach(a => a.href = waUrl(a.dataset.waKey)); }
+
+  /* --- CONFIG → page --- */
+  function applyConfig(){
+    const ar = isAr();
+    $$('.js-logo').forEach(i => { i.src = CONFIG.logo; i.alt = ar ? CONFIG.nameAr : CONFIG.name; });
+    $$('.js-name').forEach(e => e.textContent = ar ? CONFIG.nameAr : CONFIG.name);
+    $$('.js-phone').forEach(a => a.href = 'tel:' + CONFIG.phoneDial);
+    $$('.js-phone-txt').forEach(e => e.textContent = CONFIG.phone);
+    $$('.js-email').forEach(a => a.href = 'mailto:' + CONFIG.email);
+    $$('.js-email-txt').forEach(e => e.textContent = CONFIG.email);
+    $$('.js-address').forEach(e => e.textContent = ar ? CONFIG.addressAr : CONFIG.address);
+    $$('.js-hours').forEach(e => e.textContent = ar ? CONFIG.hoursAr : CONFIG.hours);
+    $$('.js-year').forEach(e => e.textContent = new Date().getFullYear());
+    $$('[data-social]').forEach(a => {
+      const url = CONFIG.social[a.dataset.social];
+      if(url){ a.href = url; a.style.display = ''; } else { a.style.display = 'none'; }
+    });
+    const stats = $$('#statsGrid > div');
+    CONFIG.stats.forEach((s, i) => {
+      const box = stats[i]; if(!box) return;
+      $('.js-count', box).dataset.target = s.value;
+      if(!$('.js-count', box).dataset.done) $('.js-count', box).textContent = '0';
+      $('.js-suffix', box).textContent = s.suffix || '';
+      $('.js-stat-label', box).textContent = ar ? s.labelAr : s.label;
+    });
+    stats.forEach((b, i) => { b.style.display = CONFIG.stats[i] ? '' : 'none'; });
+    refreshWa();
+  }
+  // map + structured data only need setting once
+  $('#mapFrame').src = 'https://maps.google.com/maps?q=' + encodeURIComponent(CONFIG.mapQuery) + '&z=13&output=embed';
+  (function(){
+    const s = document.createElement('script'); s.type = 'application/ld+json';
+    s.textContent = JSON.stringify({
+      "@context":"https://schema.org", "@type":"ProfessionalService",
+      "name": CONFIG.name, "alternateName": CONFIG.nameAr, "url": CONFIG.siteUrl,
+      "logo": new URL(CONFIG.logo, CONFIG.siteUrl).href, "image": new URL(CONFIG.logo, CONFIG.siteUrl).href,
+      "description": "AI development company in the UAE building AI agents, machine-learning solutions, mobile apps and websites.",
+      "telephone": CONFIG.phoneDial, "email": CONFIG.email,
+      "address": {"@type":"PostalAddress","streetAddress": CONFIG.address, "addressCountry":"AE"},
+      "areaServed": ["AE","SA","QA","KW","BH","OM"],
+      "knowsLanguage": ["en","ar"],
+      "sameAs": Object.values(CONFIG.social).filter(Boolean),
+      "contactPoint": [{"@type":"ContactPoint","telephone": CONFIG.phoneDial,"contactType":"sales","availableLanguage":["en","ar"]}]
+    });
+    document.head.appendChild(s);
+  })();
+
+  /* --- language --- */
+  function applyLang(lang){
+    const ar = lang === 'ar';
+    html.setAttribute('lang', ar ? 'ar' : 'en');
+    html.setAttribute('dir', ar ? 'rtl' : 'ltr');
+    $$('[data-i18n]').forEach(el => {
+      const k = el.dataset.i18n;
+      const v = ar ? I18N_AR[k] : EN[k];
+      if(v !== undefined) el.innerHTML = v;
+    });
+    $$('[data-i18n-ph]').forEach(el => {
+      const k = el.dataset.i18nPh;
+      el.setAttribute('placeholder', ar ? (I18N_AR[k] || EN_PH[k]) : EN_PH[k]);
+    });
+    $('#langToggleDesktop').textContent = ar ? 'English' : 'العربية';
+    $('#langToggleMobile').textContent = ar ? 'EN' : 'AR';
+    $('#langToggleMobile').setAttribute('aria-label', ar ? 'Switch to English' : 'التبديل إلى العربية');
+    document.title = ar
+      ? 'سايبر إكسبرت | شركة ذكاء اصطناعي وتطوير تطبيقات في دبي، الإمارات'
+      : 'Cyber Xpert — AI Agents, AI Development & Mobile Apps in Dubai, UAE | سايبر إكسبرت';
+    store.set(lang);
+    applyConfig();
+    // keep open FAQ / card panels sized correctly after text swap
+    $$('.faq-item.open .faq-a, .diff-card.open .more').forEach(p => p.style.maxHeight = p.scrollHeight + 'px');
+  }
+  const toggleLang = () => applyLang(isAr() ? 'en' : 'ar');
+  $('#langToggleDesktop').addEventListener('click', toggleLang);
+  $('#langToggleMobile').addEventListener('click', toggleLang);
+
+  // initial language: /ar or /en path → ?lang= → #ar/#en → remembered → browser
+  (function(){
+    const path = location.pathname.toLowerCase().replace(/\/+$/, '');
+    const q = new URLSearchParams(location.search).get('lang');
+    const h = location.hash.toLowerCase();
+    let lang = null;
+    if(/\/ar$/.test(path)) lang = 'ar'; else if(/\/en$/.test(path)) lang = 'en';
+    else if(q === 'ar' || q === 'en') lang = q;
+    else if(h === '#ar' || h === '#en') lang = h.slice(1);
+    else lang = store.get() || ((navigator.language || '').toLowerCase().startsWith('ar') ? 'ar' : 'en');
+    applyLang(lang);
+  })();
+
+  /* --- header scroll state --- */
+  const header = $('#siteHeader');
+  const hero = $('#hero');
+  const ctaFloat = $('#ctaFloat');
+  const darkSections = $$('.panel-deep');
+  function onScroll(){
+    header.classList.toggle('scrolled', window.scrollY > 80);
+    const pastHero = window.scrollY > hero.offsetHeight * 0.8;
+    const nearContact = $('#contact').getBoundingClientRect().top < window.innerHeight * 0.6 && $('#contact').getBoundingClientRect().bottom > 0;
+    ctaFloat.classList.toggle('show', pastHero && !nearContact);
+    const r = ctaFloat.getBoundingClientRect(), y = r.top + r.height / 2;
+    ctaFloat.classList.toggle('on-dark', darkSections.some(s => { const b = s.getBoundingClientRect(); return b.top <= y && b.bottom >= y; }));
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', onScroll);
+  onScroll();
+
+  /* --- hamburger menu --- */
+  const burger = $('#hamburgerBtn'), overlay = $('#menuOverlay');
+  function setMenu(open){
+    overlay.classList.toggle('open', open);
+    burger.classList.toggle('open', open);
+    header.classList.toggle('menu-open', open);
+    document.body.classList.toggle('menu-locked', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    $$('a', overlay).forEach((a, i) => a.style.transitionDelay = open ? (i * 60) + 'ms' : '0ms');
+  }
+  burger.addEventListener('click', () => setMenu(!overlay.classList.contains('open')));
+  $$('a', overlay).forEach(a => a.addEventListener('click', () => setMenu(false)));
+  document.addEventListener('keydown', e => { if(e.key === 'Escape') setMenu(false); });
+
+  /* --- scroll reveal + stat counters --- */
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function countUp(el){
+    if(el.dataset.done) return; el.dataset.done = '1';
+    const target = +el.dataset.target || 0;
+    if(reduce){ el.textContent = target; return; }
+    const start = performance.now(), dur = 1400;
+    (function step(now){
+      const p = Math.min((now - start) / dur, 1);
+      el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3)));
+      if(p < 1) requestAnimationFrame(step);
+    })(start);
+  }
+  const io = new IntersectionObserver(entries => {
+    entries.forEach((entry, i) => {
+      if(entry.isIntersecting){
+        setTimeout(() => {
+          entry.target.classList.add('is-visible');
+          const c = $('.js-count', entry.target); if(c) countUp(c);
+        }, (i % 4) * 100);
+        io.unobserve(entry.target);
+      }
+    });
+  }, {threshold:0.15});
+  $$('.reveal').forEach(el => io.observe(el));
+
+  /* --- service cards "View more" --- */
+  $$('.diff-card').forEach(card => {
+    const btn = $('.more-toggle', card), panel = $('.more', card);
+    if(!btn || !panel) return;
+    btn.addEventListener('click', () => {
+      const open = !card.classList.contains('open');
+      card.classList.toggle('open', open);
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      panel.style.maxHeight = open ? panel.scrollHeight + 'px' : null;
+    });
+  });
+
+  /* --- AI agents active list (crossfade panes) --- */
+  const rows = $$('#agentRows .active-row'), panes = $$('#agentDetail .detail-pane');
+  rows.forEach((row, i) => row.addEventListener('click', () => {
+    rows.forEach(r => { r.classList.remove('active'); r.setAttribute('aria-selected','false'); });
+    panes.forEach(p => p.classList.remove('active'));
+    row.classList.add('active'); row.setAttribute('aria-selected','true');
+    if(panes[i]) panes[i].classList.add('active');
+  }));
+
+  /* --- industries carousel arrows (RTL aware) --- */
+  const track = $('#galleryTrack');
+  function scrollByCard(dir){
+    const card = $('.ind-card', track);
+    const amount = card ? card.offsetWidth + 24 : 300;
+    track.scrollBy({ left: (html.dir === 'rtl' ? -1 : 1) * dir * amount, behavior: reduce ? 'auto' : 'smooth' });
+  }
+  $('#galleryPrev').addEventListener('click', () => scrollByCard(-1));
+  $('#galleryNext').addEventListener('click', () => scrollByCard(1));
+
+  /* --- FAQ accordion --- */
+  $$('.faq-item').forEach(item => {
+    const q = $('.faq-q', item), a = $('.faq-a', item);
+    q.addEventListener('click', () => {
+      const wasOpen = item.classList.contains('open');
+      $$('.faq-item.open').forEach(o => { o.classList.remove('open'); $('.faq-a', o).style.maxHeight = null; $('.faq-q', o).setAttribute('aria-expanded','false'); });
+      if(!wasOpen){ item.classList.add('open'); a.style.maxHeight = a.scrollHeight + 'px'; q.setAttribute('aria-expanded','true'); }
+    });
+  });
+
+  /* --- privacy dialog --- */
+  const dlg = $('#privacyDialog');
+  $('#privacyOpen').addEventListener('click', () => { if(dlg.showModal) dlg.showModal(); else dlg.setAttribute('open',''); });
+  $('#privacyClose').addEventListener('click', () => { if(dlg.close) dlg.close(); else dlg.removeAttribute('open'); });
+  dlg.addEventListener('click', e => { if(e.target === dlg) dlg.close(); });
+
+  /* --- contact form → WhatsApp --- */
+  $('#contactForm').addEventListener('submit', e => {
+    e.preventDefault();
+    const f = e.target;
+    const name = f.name.value.trim(), phone = f.phone.value.trim(), msg = f.message.value.trim();
+    const service = f.service.options[f.service.selectedIndex].textContent.trim();
+    if(!name || !msg){ alert(plain(t('form.error'))); (name ? f.message : f.name).focus(); return; }
+    const ar = isAr();
+    const lines = ar
+      ? [`مرحباً ${CONFIG.nameAr}،`, `الاسم: ${name}`, phone ? `الهاتف: ${phone}` : '', `الخدمة: ${service}`, `التفاصيل: ${msg}`]
+      : [`Hi ${CONFIG.name},`, `Name: ${name}`, phone ? `Phone: ${phone}` : '', `Service: ${service}`, `Details: ${msg}`];
+    window.open('https://wa.me/' + CONFIG.whatsapp + '?text=' + encodeURIComponent(lines.filter(Boolean).join('\n')), '_blank', 'noopener');
+  });
+})();
+</script>
+</body>
+</html>
